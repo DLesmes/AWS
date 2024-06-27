@@ -7,3 +7,4 @@
 ## Resources
 
 * [Cloud storage](https://aws.amazon.com/es/what-is/cloud-storage/)
+* [Data bases](https://aws.amazon.com/es/getting-started/decision-guides/databases-on-aws-how-to-choose/)
