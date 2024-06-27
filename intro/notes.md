@@ -15,11 +15,11 @@
 ### Servidores:
 Un servidor es una máquina (física o virtual) que proporciona recursos, datos, servicios o programas a otros equipos, conocidos como clientes, a través de una red. En la computación en la nube, los servidores virtuales (instancias) son muy comunes.
 
-### Tipos de Servidores en la Nube
+#### Tipos de Servidores en la Nube
   * Servidores Físicos: Máquinas físicas dedicadas a un solo usuario o empresa. Ejemplo: Bare Metal Servers en IBM Cloud.
   * Servidores Virtuales (VMs): Máquinas virtuales que funcionan sobre un hipervisor, permitiendo múltiples instancias en un solo servidor físico. Ejemplo: Amazon EC2, Azure VMs.
   * Servidores de Contenedores: Utilizan tecnologías como Docker y Kubernetes para ejecutar aplicaciones en contenedores aislados pero en un solo sistema operativo. Ejemplo: Google Kubernetes Engine (GKE).
-### Características Clave
+#### Características Clave
 * Escalabilidad: Capacidad de aumentar o disminuir recursos según las necesidades.
 * Elasticidad: Ajuste automático de recursos en respuesta a la demanda.
 * Alta Disponibilidad: Mecanismos para asegurar que los servicios estén disponibles casi todo el tiempo.
@@ -31,3 +31,6 @@ El almacenamiento en la nube se refiere a la capacidad de guardar datos en una i
 1. Almacenamiento por objetos: Divide los datos en partes distribuidas en el hardware. Cada unidad se llama objeto. (archivos, imágenes, archivos estáticos. No es para instalación de aplicaciones)
 2. Almacenamiento por Archivos: Los datos son guardados como una pieza de información dentro de una carpeta. (Almacenamiento que debe ser compartido por múltiples servidores)
 3. Almacenamiento por Bloque: Divide la información en bloques. Tiene un identificador único. Permite que se coloquen los datos más pequeños donde sea más conveniente. (Disco duro del servidor virtual en la nube)
+
+### Bases de Datos
+Las bases de datos son sistemas de back-end importantes que se utilizan para almacenar datos para cualquier tipo de aplicación, ya sea una aplicación móvil pequeña o una aplicación empresarial con requisitos de escala de Internet y en tiempo real.
