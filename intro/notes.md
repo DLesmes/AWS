@@ -27,6 +27,7 @@ Un servidor es una máquina (física o virtual) que proporciona recursos, datos,
 
 ### Almacenamiento
 El almacenamiento en la nube se refiere a la capacidad de guardar datos en una infraestructura gestionada por un proveedor de servicios en la nube. Los datos pueden ser accesibles desde cualquier lugar a través de internet.
-* Almacenamiento por objetos
-* Almacenamiento por archivos
-* Almacenamiento en bloques
+
+1. Almacenamiento por objetos: Divide los datos en partes distribuidas en el hardware. Cada unidad se llama objeto. (archivos, imágenes, archivos estáticos. No es para instalación de aplicaciones)
+2. Almacenamiento por Archivos: Los datos son guardados como una pieza de información dentro de una carpeta. (Almacenamiento que debe ser compartido por múltiples servidores)
+3. Almacenamiento por Bloque: Divide la información en bloques. Tiene un identificador único. Permite que se coloquen los datos más pequeños donde sea más conveniente. (Disco duro del servidor virtual en la nube)
