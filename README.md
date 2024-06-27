@@ -6,4 +6,4 @@
 
 ## Resources
 
-[Cloud storage](https://aws.amazon.com/es/what-is/cloud-storage/)
+* [Cloud storage](https://aws.amazon.com/es/what-is/cloud-storage/)
