@@ -52,3 +52,7 @@ Un concepto en el cual una aplicación se construye como una serie de pequeños 
 Se refiere a la ubicación física de recursos informáticos, como servidores, sistemas de almacenamiento y redes, que se encuentran y operan dentro de las instalaciones de una organización. En otras palabras, cuando una empresa o entidad tiene una infraestructura informática "on-premises", significa que todos sus recursos y sistemas de TI están alojados en su propio entorno físico, como sus oficinas, centros de datos privados o instalaciones locales
 
 En contraste, la nube y los servicios en la nube ofrecen alternativas en las que las organizaciones pueden aprovechar recursos informáticos a través de proveedores de servicios en la nube, como Amazon Web Services (AWS), Microsoft Azure o Google Cloud Platform. Estos proveedores ofrecen servicios que permiten a las organizaciones alquilar recursos informáticos de manera flexible y escalable, sin la necesidad de gestionar la infraestructura física
+
+### Cloud Computing (Nube)
+
+Es la entrega por demanda de infraestructura y todo tipo de servicios de aplicación vía internet
