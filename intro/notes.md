@@ -9,6 +9,8 @@
   * **Agiliad:** En poco tiempo puedes crear una aplicación y automatizar el despliegue y servicios lo que te permite enfocarte en la aplicación y su desarrollo.
   * **Reducción de costos:** Una de las grandes ventajas del Cloud es que los costos se generan de acuerdo a las necesidades ''Pago por demanda''
   * **Innovación e Inteligencia Artificial:** Puedes acceder a servicios de realidad aumentada o detección de fraudes. Los proveedores de Cloud ya ofrecen servicios para aplicar la IA, Machine Learning o DataScience
+  * **Despliegue global en minutos** La posibilidad de implementar aplicaciones y recursos en múltiples regiones del mundo de manera rápida y sencilla.
+  * **Catálogo de servicios:** Acceso a una amplia variedad de servicios preconfigurados, como bases de datos, análisis y machine learning, lo que acelera el desarrollo y ahorra tiempo.
 
 ## Definiciones
 
