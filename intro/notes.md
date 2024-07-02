@@ -76,6 +76,13 @@ Es uno o más centros de datos. Con su propia energía, redes y conectividad red
 ### Balanceador de cargas
 Distribuye el tráfico de requests entre AZ dentro de una misma región. El diseño de la APP tiene que ser tal que pueda correr en múltiples zonas. Multizona. Por el balanceador de cargas. De esta manera si se cae una AZ no se va a caer la APP. Con esta característica la APP tiene ALTA DISPONIBILIDAD.
 
+### Tipos de nube
+* **Nube Privada:** Una nube privada es una infraestructura de nube que está dedicada exclusivamente a una organización. Puede estar alojada en las propias instalaciones de la organización o en un entorno de centro de datos gestionado por un tercero. La nube privada ofrece mayor control y personalización, pero también requiere una inversión y administración más significativas por parte de la organización
+* **Nube Pública:** La nube pública se refiere a servicios en la nube ofrecidos por proveedores externos y accesibles a través de Internet. En este modelo, los recursos y servicios se comparten entre múltiples clientes. Los ejemplos incluyen Amazon Web Services (AWS), Microsoft Azure y Google Cloud Platform. La nube pública ofrece escalabilidad, flexibilidad y menores costos iniciales, pero implica compartir recursos con otros usuarios
+* **Nube Híbrida:** Una nube híbrida combina elementos de nubes privadas y públicas. Permite a una organización mantener algunas aplicaciones y datos en su infraestructura privada y, al mismo tiempo, aprovechar la nube pública para cargas de trabajo específicas. La nube híbrida ofrece flexibilidad y la capacidad de aprovechar lo mejor de ambos mundos, pero también requiere una gestión cuidadosa de la integración y la seguridad
+* **Multinube:** La estrategia de multinube implica el uso simultáneo de múltiples proveedores de nube pública para alojar diferentes aplicaciones, servicios o componentes de una solución. Puede usarse para evitar el bloqueo de proveedor, aprovechar las fortalezas específicas de diferentes proveedores y garantizar la redundancia en caso de problemas con un proveedor
+* **Multinube hibrida** 2 nubes públicas + 1 nube privada. Ej: PlatziWallet corre en AWS, pero tenemos la parte de procesamiento de datos y analítica en GCP. Todos los eventos que genera PlatziWallet los enviamos a GCP. Pero la APP tiene que consumir una DB que está en on-premise en una nube privada
+
 ## ¿Cuáles son los diferenciadores en la implementación entre Cloud computing y On premise?
 
 * Modelo de costos: Modelo basado en demanda. Cambiar CAPEX por OPEX.
