@@ -10,3 +10,7 @@
 
 * [Cloud storage](https://aws.amazon.com/es/what-is/cloud-storage/)
 * [Data bases](https://aws.amazon.com/es/getting-started/decision-guides/databases-on-aws-how-to-choose/)
+* Cloud definitions
+  * [¿Qué es la computación en la nube?](https://aws.amazon.com/es/what-is-cloud-computing/)
+  * [¿Qué es la nube?](https://azure.microsoft.com/es-es/resources/cloud-computing-dictionary/what-is-the-cloud)
+  * [¿Qué es la computación en la nube?](https://cloud.google.com/learn/what-is-cloud-computing?hl=es-419)
