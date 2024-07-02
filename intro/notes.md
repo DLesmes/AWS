@@ -58,3 +58,12 @@ En contraste, la nube y los servicios en la nube ofrecen alternativas en las que
 ### Cloud Computing (Nube)
 
 Es la entrega por demanda de infraestructura y todo tipo de servicios de aplicación vía internet
+
+## ¿Cuáles son los diferenciadores en la implementación entre Cloud computing y On premise?
+
+* Modelo de costos: Modelo basado en demanda. Cambiar CAPEX por OPEX. ) ON-PREMISES (CAPEX): costos (servidor, lugar, cable de red, aire acondicionado, ups para alimentación contínua). 10000 dólares + 2 meses para instalar. NUBE (OPEX): en 10 minutos luego de logueado, empiezas a pagar los costos por demanda (lo que me cobran por segundo). Costo más operativo
+* Modelo de entrega y despliegue: Automatización, y creación de ambientes. Cambia la forma de trabajar. Automatización (Roles DevOps, crear Pipelines para automatizar el despliegue de aplicaciones e infraestructura). En la NUBE se pueden crear ambientes muy rápido. Para una APP se necesita una ambiente de desarrollo, uno de pruebas y uno de producción, para cada FEATURE que agregamos a la APP. Cambia el despliegue de FEATURES, SERVICIOS e INFRAESTRUCTURA
+* Patrones nativos de nube: Tomar ventaja de los patrones en la nube (cloud native). Pensar en MODO NUBE. Definiciones de cómo utilizar los SERVICIOS orientados a mejores prácticas
+* Escalabilidad y resiliencia: Recuperación antes fallas, utilizar zonas y regiones. Puedo tener una copia de PlatziWallet en cualquier parte del mundo (resiliencia)
+* TEcnologías disruptivas: (disponibles en la NUBE, al alcance de la mano en unos minutos): AI, Data, Robots, satélites, automatización
+* Modelos de seguridad compartida: Responsabilidad del usuario y proveedor de servicios Cloud¿ Que es responsabilidad del proveedor de nube y que es nuestra? Ej: responsabilidad nuestra (pusimos una clave muy fácil y se abrió el puerto 22 a todo el mundo). Responsabilidad del cloud provider (que el servidor funcione)
