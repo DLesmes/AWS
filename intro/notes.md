@@ -34,3 +34,15 @@ El almacenamiento en la nube se refiere a la capacidad de guardar datos en una i
 
 ### Bases de Datos
 Las bases de datos son sistemas de back-end importantes que se utilizan para almacenar datos para cualquier tipo de aplicación, ya sea una aplicación móvil pequeña o una aplicación empresarial con requisitos de escala de Internet y en tiempo real.
+
+### Infraestructura como código
+Permite gestionar y desplegar la infraestructura en un proveedor de servicios de nube a través de código, en vez de hacerlo por procesos manuales. El servidor que vamos a desplegar con su almacenamiento base de datos para PlatziWalet lo vamos a construir a través de código. La infraestructura la debemos pensar como código. Podemos re-utilizarla (templates).
+
+### Función
+Es un entorno de ejecución SERVERLESS para ejecutar código sin la necesidad de administrar un servidor. EL CLOUD PROVIDE se encarga de la administración y nos provee la función. AWS (lambda functions), AZURE (azure functions), GOOGLE CLOUD (cloud function). Aprender a desarrollar basado en funciones. La función siempre está dormida hasta que un evento la dispara. Evento: suben foto usuario, entonces función minimiza foto.
+
+### Docker Container
+contenedor ejecutable, independiente que tiene todo lo necesario para ejecutar una aplicación.
+
+### Microservicio
+Un concepto en el cual una aplicación se construye como una serie de pequeños servicios. Ejemplo: microservicio de pagos. Este microservicio de “pagos” se tiene que conectar con otro microservicio de “consulta del saldo”. Microservicios de PlatziWalet: pagos y cobros (pago a personas), formulario y promoción (suscripciones y pagos), generar y escanear (código QR), recarga y retiro (retiro y consignación).
