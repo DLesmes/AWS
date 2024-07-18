@@ -15,3 +15,4 @@
   * [¿Qué es la nube?](https://azure.microsoft.com/es-es/resources/cloud-computing-dictionary/what-is-the-cloud)
   * [¿Qué es la computación en la nube?](https://cloud.google.com/learn/what-is-cloud-computing?hl=es-419)
 * [Cloud Native Computing Fundation](https://www.cncf.io/)
+* [Serverless Patterns](https://serverlessland.com/patterns/)
