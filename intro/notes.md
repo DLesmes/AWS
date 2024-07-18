@@ -146,12 +146,11 @@ El cloud provider le da al usuario una FUNCIÓN y un CONTENEDOR SERVERLESS. El u
 -> Streams:
   * Son una secuencia de eventos, mensajes o datos que pueden ser procesados una vez ocurren, los cuales pueden ser distribuidos a múltiples consumidores.
   * Abundan en los proyectos donde la palabra clave es “data” o “real-time”.
-
--> Real-time:
-  * es cuando se puede utilizar un evento o una acción que se acabó de generar hace poco.
-  * Los streams tienen la capacidad de recibir muchísimos eventos en paralelo (millones) y se los puede enviar a un dashboard para que los grafique y lo pueda ver un equipo de marketing, por ejemplo.
-  * En los cloud provider estos streams son servicios completamente serverless.
-  * El streams tiene que tener la capacidad de recibir esos millones de eventos y enviarselo a un consumidor en tiempo real.
+  * Real-time:
+    * es cuando se puede utilizar un evento o una acción que se acabó de generar hace poco.
+    * Los streams tienen la capacidad de recibir muchísimos eventos en paralelo (millones) y se los puede enviar a un dashboard para que los grafique y lo pueda ver un equipo de marketing, por ejemplo.
+    * En los cloud provider estos streams son servicios completamente serverless.
+    * El streams tiene que tener la capacidad de recibir esos millones de eventos y enviarselo a un consumidor en tiempo real.
 
 -> Colas
   * Son un método para retrasar el trabajo, utilizadas para desacoplar componentes de un sistema.
