@@ -141,3 +141,67 @@ El cloud provider le da al usuario una FUNCIÓN y un CONTENEDOR SERVERLESS. El u
 * TIEMPO de CÓMPUTO: Ejemplo. Hay FUNCIONES que su tiempo máximo de vida es 15 minutos y necesitamos un tiempo de ejecución de 30 minutos. FUNCIÓN limitada por un timeout.
 * CONECTIVIDAD: Ejemplo. Consumo de direcciones IP que hace una función dentro de una capa de red. Si es alto hay que evaluar la utilidad que tiene esa función dentro de la capa. Pues es aconsejable que esa función no se ubique dentro de una VPC o una Virtual Private Cloud dentro de la red. Sino que se ejecute fuera de ella para tener más flexibilidad.
 * VENDOR LOCK-IN: si queremos migrar una aplicación de AZURE a AWS lo más probable es que la tengamos que hacer de nuevo.
+
+### Componentes de una arquitectura Serverless
+-> Streams:
+  * Son una secuencia de eventos, mensajes o datos que pueden ser procesados una vez ocurren, los cuales pueden ser distribuidos a múltiples consumidores.
+  * Abundan en los proyectos donde la palabra clave es “data” o “real-time”.
+
+-> Real-time:
+  * es cuando se puede utilizar un evento o una acción que se acabó de generar hace poco.
+  * Los streams tienen la capacidad de recibir muchísimos eventos en paralelo (millones) y se los puede enviar a un dashboard para que los grafique y lo pueda ver un equipo de marketing, por ejemplo.
+  * En los cloud provider estos streams son servicios completamente serverless.
+  * El streams tiene que tener la capacidad de recibir esos millones de eventos y enviarselo a un consumidor en tiempo real.
+
+-> Colas
+  * Son un método para retrasar el trabajo, utilizadas para desacoplar componentes de un sistema.
+  * Ejemplo: cola para el cajero del banco.
+  * Las colas se ubican para no saturar a un componente de la arquitectura.
+  * Ejemplo: miles de usuarios piden un certificado a la APP, la cola en cola estas solicitudes y la aplicación lo va procesando a medida que pueda. De esta manera la APP nunca se cae.
+
+-> Bucket
+  * Es una estructura donde se puede almacenar una colección de OBJETOS.
+  * Estos objetos se pueden consultar.
+  * Su costo se basa en la cantidad de solicitudes y espacio utilizado.
+
+-> Almacenamiento por objetos.
+  * Un objeto puede ser la foto de cada usuario de la APP.
+    
+-> API
+  * Es una abreviatura de APPLICATION PROGRAMMING INTERFACES, son mecanismos que permiten a dos componentes de software comunicarse entre sí, mediante un conjunto de definiciones y protocolos.
+  * API REST, API HTTPS, API WebSocket, API GraphQL y todos son servicios serveless.
+  * La API es la puerta de entrada a nuestra aplicación.
+    
+-> Datastore
+  * Es una base NoSQL creada para proporcionar autoescalamiento, alto rendimiento y facilidad para el desarrollo de aplicaciones.
+  * No SQL: llave valor, de memoria, por grafos y documentales.
+    
+-> Identity Services
+  * Son servicios en la nube que ayudan a implementar la administración de acceso e identidad de los usuarios a nuestras aplicaciones web o móviles.
+  * Servicios para hacer autenticación y autorización.
+  * Ejemplo para PlatziWallet: yo puedo registrarme como usuario (autenticación) pero hasta que no registre una tarjeta de crédito no voy a poder realizar un pago (autenticación).
+    
+-> Motor de consultas
+  * Es un motor de consulta SQL que pueden consultar data estructurada, semiestructurada y no estructurada de diferentes fuentes de datos.
+  * Ej: PRESTO (Open Source).
+  * Query a múltiples fuentes, centralizadas y el costo es por la cantidad de data escaneada.
+  * A datos que tengamos en almacenamiento por objetos, a DB no relacionales y relacionales.
+    
+-> Balanceadores de carga
+* Componente que distribuye el tráfico entre varios destinos, puede ser a nivel de aplicación, red o transporte.
+* Recibe los requests y los distribuye entre las zonas de disponibilidad.
+* El balanceador de aplicaciones es el que va ser nuestro foco, porque va a trabajar en capa 7 del modelo OCI, es decir, va a balancear a nivel de HTTP y HTTPS.
+* El balanceador de red se enfoca en las capas 3 y 4 del modelo OCI, es decir, en balancear tráfico IP, tráfico UDP y tráfico TCP.
+
+-> Summary
+  * Funciones (Functions): Pequeños fragmentos de código que se ejecutan en respuesta a eventos específicos.
+  * Eventos (Events): Desencadenantes que inician la ejecución de funciones, como solicitudes HTTP, cambios en bases de datos o mensajes en colas.
+  * Plataforma Serverless: El proveedor de servicios que ofrece la infraestructura subyacente, como AWS Lambda, Azure Functions o Google Cloud Functions.
+  * Almacenamiento de Datos: Bases de datos, sistemas de archivos, almacenes de objetos u otros sistemas de almacenamiento utilizados por las funciones.
+  * API Gateway: Un componente que permite exponer las funciones como servicios web o API RESTful para interactuar con aplicaciones externas.
+  * Colas de Mensajes (Message Queues): Utilizadas para la comunicación asíncrona y la gestión de eventos entre funciones.
+  * Gestión de Identidad y Acceso: Servicios que garantizan la seguridad y la autenticación de las funciones y las aplicaciones.
+  * Monitorización y Registro (Monitoring and Logging): Herramientas y servicios que permiten rastrear y analizar el rendimiento y el comportamiento de las funciones.
+  * Automatización de Despliegue (Deployment Automation): Herramientas que facilitan la implementación y actualización de funciones de manera eficiente.
+  * Gestión de Recursos y Escalabilidad Automática: Componentes que administran los recursos subyacentes y escalan automáticamente según la demanda.
+  * Reglas y Orquestación: La capacidad de definir reglas de negocio y orquestar múltiples funciones para resolver problemas más complejos.
