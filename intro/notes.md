@@ -252,3 +252,6 @@ Ejemplo: Backend corre en AWS (Kubernetes) y DevOps corre en Azure (despliegue).
 * AGNÓSTICO: que los servicios de la aplicación puedan ser desplegados fácilmente en todos los Cloud Provider. Ejemplo: desplegar una aplicación usando Open Source en Kubernetes en AWS y hago su réplica en Kubernetes en Azure. Al ser todo Kubernetes y Open Source puedo replicarlo más fácil. La limitación Lock-in puede estar dada por los productos específicos de Open Source.
 * PARALELO: Si se me cae una nube que entre otra. Es muy difícil de implementar porque tiene una complejidad técnica muy alta. Porque necesitas personal con conocimiento muy alto en 2 nubes. Funciona como un DRP (disaster recovery). Para esto las empresas tienen que definir el RTO y el RPO.
 * SEGMENTADO: Ejemplo: todo nuestro Backend va a correr en Azure pero toda la parte de Data, Analítica y Machine Learning va a correr en GCP. Segmentando cargas de trabajo para que sean ejecutadas en distintos CP. Existe un skill lock-in porque el equipo de data saba GCP y el equipo de backend sabe Azure.
+
+  ## [Service models](https://www.area19delegate.org/on-premises-vs-iaas-vs-paas-vs-saas-a-comparative-study/)
+  ![](https://www.area19delegate.org/wp-content/uploads/2018/08/on-premise-iaas-paas.png)
