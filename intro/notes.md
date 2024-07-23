@@ -238,3 +238,17 @@ Estar limitado por acuerdos contractuales que dificultan cambiar de proveedor o 
 ### Mental Lock-in (Encierro mental):
 Permanecer apegado a una tecnología o enfoque familiar, incluso cuando hay mejores alternativas disponibles.
   * Ejemplo: Rechazar la adopción de nuevas tecnologías en una empresa debido a la resistencia al cambio, a pesar de que esas tecnologías podrían mejorar la eficiencia.
+
+## Multinube
+
+Utilizar más de un proveedor de servicios de nube pública para desplegar una aplicación, plataforma o sistema. Ejemplo: PlatziWallet corriendo en AWS teniendo servicios en GCP. Hay empresas que son multi nube. 
+
+### Estrategias de multi nube
+(que puede definir que despliegue determinada parte de la aplicación en la nube A o B):
+
+* ARBITRARIO: no es una decisión técnica. Puede ser por un convenio ó MSA con el Cloud Provider, decisión de negocios, skills lock-in (los trabajadores saben X plataforma), legal lock-in (contrato por varios años con el CP).
+* ELECCIÓN: seleccionar lo mejor de los mundos que se acomode a nuestro caso de uso. Mirar pros y contra de los CP realizando un estudio.
+Ejemplo: Backend corre en AWS (Kubernetes) y DevOps corre en Azure (despliegue). Estoy tomando lo mejor de los mundos. Puedo tener Vendor Lock-in porque si Azure DevOps lo quiero llevar a AWS tengo que rehacerlo todo prácticamente. Por otro lado, los trabajadores van a tener que saber de AWS y de Azure.
+* AGNÓSTICO: que los servicios de la aplicación puedan ser desplegados fácilmente en todos los Cloud Provider. Ejemplo: desplegar una aplicación usando Open Source en Kubernetes en AWS y hago su réplica en Kubernetes en Azure. Al ser todo Kubernetes y Open Source puedo replicarlo más fácil. La limitación Lock-in puede estar dada por los productos específicos de Open Source.
+* PARALELO: Si se me cae una nube que entre otra. Es muy difícil de implementar porque tiene una complejidad técnica muy alta. Porque necesitas personal con conocimiento muy alto en 2 nubes. Funciona como un DRP (disaster recovery). Para esto las empresas tienen que definir el RTO y el RPO.
+* SEGMENTADO: Ejemplo: todo nuestro Backend va a correr en Azure pero toda la parte de Data, Analítica y Machine Learning va a correr en GCP. Segmentando cargas de trabajo para que sean ejecutadas en distintos CP. Existe un skill lock-in porque el equipo de data saba GCP y el equipo de backend sabe Azure.
