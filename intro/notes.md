@@ -239,7 +239,7 @@ Estar limitado por acuerdos contractuales que dificultan cambiar de proveedor o 
 Permanecer apegado a una tecnología o enfoque familiar, incluso cuando hay mejores alternativas disponibles.
   * Ejemplo: Rechazar la adopción de nuevas tecnologías en una empresa debido a la resistencia al cambio, a pesar de que esas tecnologías podrían mejorar la eficiencia.
 
-## Multinube
+## MultiCloud
 
 Utilizar más de un proveedor de servicios de nube pública para desplegar una aplicación, plataforma o sistema. Ejemplo: PlatziWallet corriendo en AWS teniendo servicios en GCP. Hay empresas que son multi nube. 
 
