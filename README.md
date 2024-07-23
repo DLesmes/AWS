@@ -16,3 +16,10 @@
   * [¿Qué es la computación en la nube?](https://cloud.google.com/learn/what-is-cloud-computing?hl=es-419)
 * [Cloud Native Computing Fundation](https://www.cncf.io/)
 * [Serverless Patterns](https://serverlessland.com/patterns/)
+* Cloud Providers
+ * [AWS](https://aws.amazon.com/es/)
+ * [GCP](https://cloud.google.com/?hl=es-419)
+ * [Azure](https://azure.microsoft.com/es-es/)
+ * [Oracle Cloud](https://www.oracle.com/cloud/)
+ * [Alibaba CLoud](https://www.alibabacloud.com/es)
+ * [Huawei Cloud](https://cloud.huawei.com/)
