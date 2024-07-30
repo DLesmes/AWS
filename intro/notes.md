@@ -284,3 +284,6 @@ Es la capacidad de incrementar o decrementar los recursos necesarios para compli
   * ESCALABILIDAD HORIZONTAL: es la capacidad de agregar más nodos para soportar una demanda creciente de solicitudes en un sistema. Ejemplo: replicar servidores en el momento de más carga. No tenemos DOWNTIME (caída del servicio).
 
 ¿Sirve ESCALABILIDAD sin alta DISPONIBILIDAD? La ESCALABILIDAD está en más de una ZONA. Porque si solo escalamos en una zona perdemos ALTA DISPONIBILIDAD.
+
+## General Architecture Diagram
+![](https://static.platzi.com/media/user_upload/Cloud%27s%20Architecture%20-%20Page%201-a3d7aa31-3b58-47d5-968c-5e36ae6524a3.jpg)
