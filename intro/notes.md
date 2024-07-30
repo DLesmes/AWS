@@ -293,3 +293,6 @@ Es la capacidad de incrementar o decrementar los recursos necesarios para compli
 
 ## Container Architecture Diagram
 ![](https://static.platzi.com/media/user_upload/Cloud%27s%20Architecture%20-%20Page%201%20Arquitectura%20base%20con%20contenedores-836204ce-2b61-4f9c-bf45-9ef19b6f217b.jpg)
+
+## Functions Architecture Diagram
+![](https://static.platzi.com/media/user_upload/Cloud%27s%20Architecture%20-%20Page%201%20Arquitectura%20con%20funciones-d12b149e-4e24-4a54-8da7-ccb9b440e5ef.jpg)
