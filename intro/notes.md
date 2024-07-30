@@ -261,8 +261,7 @@ Ejemplo: Backend corre en AWS (Kubernetes) y DevOps corre en Azure (despliegue).
   * [Azure](https://learn.microsoft.com/es-es/azure/security/fundamentals/shared-responsibility)
   * [GCP](https://cloud.google.com/architecture/framework/security/shared-responsibility-shared-fate?hl=es-419)
 
-## (Alta Disponibilidad)[https://aws.amazon.com/blogs/mt/establishing-rpo-and-rto-targets-for-cloud-applications/]
-:
+## (Alta Disponibilidad)[https://aws.amazon.com/blogs/mt/establishing-rpo-and-rto-targets-for-cloud-applications/]:
 Mantener un sistema funcionando incluso cuando ocurren problemas, minimizando el tiempo de inactividad y asegurando servicios continuos
 
 * RTO (Tiempo de Recuperación Objetivo): El tiempo máximo deseado para que un sistema vuelva a funcionar después de una falla, reduciendo el impacto del tiempo de inactividad.
@@ -273,7 +272,15 @@ Mantener un sistema funcionando incluso cuando ocurren problemas, minimizando el
 La tolerancia a fallos es la capacidad de un sistema, aplicación o servicio para continuar funcionando de manera aceptable incluso cuando uno o varios componentes experimentan problemas o fallas. Implica diseñar sistemas de manera que sean capaces de manejar errores y problemas sin que todo el sistema se vea comprometido, lo que garantiza la disponibilidad y la continuidad de los servicios incluso en condiciones adversas.
 
 ### Cloud provider disaster and recovery documentation
-* (AWS)[https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-options-in-the-cloud.html]
-* (Azure)[https://azure.microsoft.com/en-us/solutions/backup-and-disaster-recovery/]
-* (GCP)[https://cloud.google.com/architecture/dr-scenarios-planning-guide?hl=es-419]
+* [AWS](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-options-in-the-cloud.html)
+* [Azure](https://azure.microsoft.com/en-us/solutions/backup-and-disaster-recovery/)
+* [GCP](https://cloud.google.com/architecture/dr-scenarios-planning-guide?hl=es-419)
 
+## [Escalabilidad](https://azure.microsoft.com/es-es/resources/cloud-computing-dictionary/scaling-out-vs-scaling-up/#overview)
+Es la capacidad de incrementar o decrementar los recursos necesarios para complir la demanda cambiante en una aplicación o servicio. Crecer y decrecer basado en la demanda que recibe nuestra aplicación. Ejemplo: descuentos por pago en Black Friday. Entonces, los servicios que reciben pago crezcan y soporten al incremento de la cantidad de usuarios por la oferta y luego de pasada la oferta estos mismos servicios decrecen
+
+  * ESCALABILIDAD VERTICAL: es la escalabilidad de añadir más recursos a un nodo particular dentro de un sistema. Hay una caída del servicio mientras se hace el cambio. Ejemplo: A un determinado servidor lo apago, le aumento los recursos (cpu, ram, disco) y lo vuelvo a prender. Luego tendré que apagarlos para volver a los recursos a sus niveles anteriores. No cambia la cantidad de servidores. Hubo caída del servicio cuando lo apago.
+
+  * ESCALABILIDAD HORIZONTAL: es la capacidad de agregar más nodos para soportar una demanda creciente de solicitudes en un sistema. Ejemplo: replicar servidores en el momento de más carga. No tenemos DOWNTIME (caída del servicio).
+
+¿Sirve ESCALABILIDAD sin alta DISPONIBILIDAD? La ESCALABILIDAD está en más de una ZONA. Porque si solo escalamos en una zona perdemos ALTA DISPONIBILIDAD.
