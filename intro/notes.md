@@ -261,7 +261,7 @@ Ejemplo: Backend corre en AWS (Kubernetes) y DevOps corre en Azure (despliegue).
   * [Azure](https://learn.microsoft.com/es-es/azure/security/fundamentals/shared-responsibility)
   * [GCP](https://cloud.google.com/architecture/framework/security/shared-responsibility-shared-fate?hl=es-419)
 
-## (Alta Disponibilidad)[https://aws.amazon.com/blogs/mt/establishing-rpo-and-rto-targets-for-cloud-applications/]:
+## [Alta Disponibilidad](https://aws.amazon.com/blogs/mt/establishing-rpo-and-rto-targets-for-cloud-applications/):
 Mantener un sistema funcionando incluso cuando ocurren problemas, minimizando el tiempo de inactividad y asegurando servicios continuos
 
 * RTO (Tiempo de Recuperación Objetivo): El tiempo máximo deseado para que un sistema vuelva a funcionar después de una falla, reduciendo el impacto del tiempo de inactividad.
@@ -276,7 +276,7 @@ La tolerancia a fallos es la capacidad de un sistema, aplicación o servicio par
 * [Azure](https://azure.microsoft.com/en-us/solutions/backup-and-disaster-recovery/)
 * [GCP](https://cloud.google.com/architecture/dr-scenarios-planning-guide?hl=es-419)
 
-## [Escalabilidad](https://azure.microsoft.com/es-es/resources/cloud-computing-dictionary/scaling-out-vs-scaling-up/#overview)
+## [Escalabilidad](https://azure.microsoft.com/es-es/resources/cloud-computing-dictionary/scaling-out-vs-scaling-up/#overview):
 Es la capacidad de incrementar o decrementar los recursos necesarios para complir la demanda cambiante en una aplicación o servicio. Crecer y decrecer basado en la demanda que recibe nuestra aplicación. Ejemplo: descuentos por pago en Black Friday. Entonces, los servicios que reciben pago crezcan y soporten al incremento de la cantidad de usuarios por la oferta y luego de pasada la oferta estos mismos servicios decrecen
 
   * ESCALABILIDAD VERTICAL: es la escalabilidad de añadir más recursos a un nodo particular dentro de un sistema. Hay una caída del servicio mientras se hace el cambio. Ejemplo: A un determinado servidor lo apago, le aumento los recursos (cpu, ram, disco) y lo vuelvo a prender. Luego tendré que apagarlos para volver a los recursos a sus niveles anteriores. No cambia la cantidad de servidores. Hubo caída del servicio cuando lo apago.
