@@ -4,7 +4,7 @@
 
 ## Fundamentals
 
-* [Notes](https://github.com/DLesmes/AWS/blob/main/intro/notes.md), content and code for the course [Introducción a la Nube](https://platzi.com/cursos/intro-nube/)
+* [Notes]([https://github.com/DLesmes/AWS/blob/main/intro/notes.md](https://github.com/DLesmes/AWS/blob/main/intro/notes_cloud_intro.md)), content and code for the course [Introducción a la Nube](https://platzi.com/cursos/intro-nube/)
 
 ### Other links
 
