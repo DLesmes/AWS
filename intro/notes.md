@@ -287,3 +287,6 @@ Es la capacidad de incrementar o decrementar los recursos necesarios para compli
 
 ## General Architecture Diagram
 ![](https://static.platzi.com/media/user_upload/Cloud%27s%20Architecture%20-%20Page%201-a3d7aa31-3b58-47d5-968c-5e36ae6524a3.jpg)
+
+## Multi Servers Architecture Diagram
+![](https://static.platzi.com/media/user_upload/Cloud%27s%20Architecture%20-%20Page%201%20%281%29-8e1d79c5-1a31-4af3-9ec9-1ae7e25ec2dc.jpg)
