@@ -260,3 +260,20 @@ Ejemplo: Backend corre en AWS (Kubernetes) y DevOps corre en Azure (despliegue).
   * [AWS](https://aws.amazon.com/es/compliance/shared-responsibility-model/)
   * [Azure](https://learn.microsoft.com/es-es/azure/security/fundamentals/shared-responsibility)
   * [GCP](https://cloud.google.com/architecture/framework/security/shared-responsibility-shared-fate?hl=es-419)
+
+## (Alta Disponibilidad)[https://aws.amazon.com/blogs/mt/establishing-rpo-and-rto-targets-for-cloud-applications/]
+:
+Mantener un sistema funcionando incluso cuando ocurren problemas, minimizando el tiempo de inactividad y asegurando servicios continuos
+
+* RTO (Tiempo de Recuperación Objetivo): El tiempo máximo deseado para que un sistema vuelva a funcionar después de una falla, reduciendo el impacto del tiempo de inactividad.
+
+* RPO (Punto de Recuperación Objetivo): La cantidad máxima de datos que una organización está dispuesta a perder en una interrupción, marcando cuán actualizados deben estar los datos recuperados.
+
+## Tolerancia a Fallos: 
+La tolerancia a fallos es la capacidad de un sistema, aplicación o servicio para continuar funcionando de manera aceptable incluso cuando uno o varios componentes experimentan problemas o fallas. Implica diseñar sistemas de manera que sean capaces de manejar errores y problemas sin que todo el sistema se vea comprometido, lo que garantiza la disponibilidad y la continuidad de los servicios incluso en condiciones adversas.
+
+### Cloud provider disaster and recovery documentation
+* (AWS)[https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-options-in-the-cloud.html]
+* (Azure)[https://azure.microsoft.com/en-us/solutions/backup-and-disaster-recovery/]
+* (GCP)[https://cloud.google.com/architecture/dr-scenarios-planning-guide?hl=es-419]
+
