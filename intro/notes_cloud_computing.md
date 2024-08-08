@@ -33,3 +33,56 @@ A continuación, conocerás algunas dificultades del enfoque de tecnología de l
 * Escalamiento limitado: podemos vernos limitados por el espacio donde almacenamos los servidores
 * Monitoreo 24/7: debemos contratar gente para monitorear los servidores
 * Desastres naturales: ¿cómo evitamos que se caigan nuestros servicios si ocurre un imprevisto?
+
+## Qué es la computación en la nube
+La computación en la nube es la entrega bajo demanda de computación, almacenamiento de bases de datos, aplicaciones y otros recursos de TI a través de una plataforma de servicios en la nube por medio de Internet con precios de pago por uso.
+
+* Suministras el tipo y tamaño exactamente correctos de los recursos informáticos que necesitas.
+* Puedes acceder al instante a todos los recursos que necesitas.
+* Una forma sencilla de acceder a servidores, almacenamiento, bases de datos y un conjunto de servicios de aplicaciones: poder de computo, almacenamiento y bases de datos.
+
+##### Servicios que ya has usado en la nube
+* Gmail Servicio de email en la nube. Pagas solo por tus emails almacenados (no infraestructura)
+* Dropbox Servicio de almacenamiento en la nube. Originalmente se construyó en AWS
+* Netflix Servicio de video en demanda. Construido en AWS.
+
+### Tipos de modelos de computación en la nube
+
+##### Nube Privada
+* Servicios de nube usados por una organización (no está expuesta al público).
+* Control total.
+* Seguridad para aplicaciones sensibles.
+* Satisface necesidades comerciales específicas. 
+
+##### Nube Pública
+* Recursos propios en la nube y operados por proveedores de nube de terceros a través de internet.
+* Seis ventajas del cómputo en la nube.
+* Google Cloud Platform (GCP), Azure, AWS
+
+##### Nube Híbrida
+* Mantener algunos servidores en las instalaciones y extender otras capacidades en la nube.
+* Control sobre activos sensibles en tu infraestructura privada
+* Flexibilidad y rentabilidad de la nube pública.
+
+#### 5 características de la computación en la nube
+* Autoservicio en demanda
+* Amplio acceso a la red
+* Múltiples inquilinos y agrupación de recursos
+* Elasticidad y escalabilidad
+* Servicio medido
+
+#### 6 ventajas de la computación en la nube
+* Gastos de capital comercial (capex) sobre gastos operativos (opex)
+* Economías de escala
+* Dejar de adivinar la capacidad
+* Incrementar la velocidad y la agilidad
+* Dejar de gastar dinero en la ejecución
+* Globalizar en minutos
+
+#### Problemas resueltos por la nuble
+* Flexibilidad: cambia los tipos de recursos cuando sea necesario
+* Rentabilidad: pagar sobre la marcha por lo que se usa
+* Escalabilidad: acomodar cargas grandes al hacer que el hardware sea más fuerte o agregando nodos adicionales
+* Elasticidad: capacidad de escalar cuando sea necesario
+* Alta disponibilidad y tolerancia a fallos, crecer en todos los centros de datos
+* Agilidad: desarrollar, probar y ejecutar rápidamente aplicaciones en la nube
