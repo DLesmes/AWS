@@ -24,7 +24,8 @@
   * [Oracle Cloud](https://www.oracle.com/cloud/)
   * [Alibaba CLoud](https://www.alibabacloud.com/es)
   * [Huawei Cloud](https://cloud.huawei.com/)
- * Services and Latency 🔫
+   
+* Services and Latency 🔫
   * [Infraestructura global de AWS](https://aws.amazon.com/es/about-aws/global-infrastructure/) 🏳️
   * [Servicios de AWS por región](https://aws.amazon.com/es/about-aws/global-infrastructure/regional-product-services/) ☢️
   * [HTTP ping](https://www.cloudping.info/) ⚙️
