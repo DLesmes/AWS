@@ -135,3 +135,31 @@ En la siguiente tabla se muestra qué componentes de IT están administrados seg
 | Almacenamiento | ❌ | 👍 | 👍 | 👍 |
 | Redes | ❌ | 👍 | 👍 | 👍 | 
 
+## Una pequeña historia de AWS
+
+Benjamin Black and Chris Pinkham, the masterminds behind Amazon Web Services, saw a need for groundbreaking tech solutions during a surge in traffic and demand. Their vision laid the foundation for a revolution in cloud computing.
+
+##### A History of Innovation 💡
+AWS has become a cornerstone for countless startups and established companies alike, driving transformations across industries.
+
+###### A Timeline of Milestones ⏳
+Here's a quick and easy look at the key moments in AWS's history:
+
+* 2002 ➡️ The platform is born within Amazon!
+* 2003 ➡️ AWS starts its journey to the world.
+* 2004 ➡️ SQS (Simple Queue Service) makes its debut.
+* 2006 ➡️ SQS, S3 (Simple Storage Service), and EC2 (Elastic Compute Cloud) launch to the public. 🚀
+* 2007 ➡️ AWS expands its reach across Europe. 🌎
+* 2009 ➡️ RDS (Relational Database Service) joins the lineup.
+* 2010 ➡️ Route 53, a domain name system, becomes available.
+* 2012 ➡️ DynamoDB (a non-relational database) revolutionizes data management.
+
+###### AWS: By the Numbers 📊
+
+You might be a devoted AWS user, but did you know these facts? 🤔
+
+* 2019 ➡️ AWS reached a staggering $35.02 Billion in annual revenue! 🤑
+* 2019 ➡️ AWS commanded a massive 47% of the cloud market! 📈
+* Active Users: AWS has over 1 Million active users! 🤯
+
+AWS has come a long way, and its story continues to inspire! 🚀
