@@ -86,3 +86,52 @@ La computación en la nube es la entrega bajo demanda de computación, almacenam
 * Elasticidad: capacidad de escalar cuando sea necesario
 * Alta disponibilidad y tolerancia a fallos, crecer en todos los centros de datos
 * Agilidad: desarrollar, probar y ejecutar rápidamente aplicaciones en la nube
+
+## Los diferentes tipos de cómputo: IaaS vs. PaaS vs. SaaS
+
+Ahora que conoces más sobre la tecnología en la nube, es importante introducir sus distintos tipos de servicio en la industria para identificar sus diferencias.
+
+Estos modelos varían de acuerdo al tipo de servicio informático que pueda ofrecer, como servidores, almacenamiento, software o bases de datos.
+
+#### Infrastructure as a Service (IAAS)
+La infraestructura como servicio (IAAS) proporciona componentes básicos de IT en la nube, es decir, redes, computación, almacenamiento, etc. A su vez, provee el máximo nivel de flexibilidad para adaptarlo a tus necesidades.
+
+* Azure Virtual Machines
+* Linode
+* Digital ocean
+* S2 AWS
+
+#### Platform as a Service (PAAS)
+Los modelos que ofrecen una plataforma como servicio (PAAS) eliminan la necesidad de que administremos la infraestructura y proveen una plataforma para gestionar aplicaciones.
+
+* Heroku
+* Google App Engine
+* AWS Elastic Beanstalk
+
+#### Software as a Service (SAAS)
+El Software como servicio (SAAS) brinda un producto de software terminado que es ejecutado y administrado por el proveedor del servicio.
+
+* Amazon Rekognition
+* Dropbox
+* Zoom
+* Gmail
+
+#### On -premises
+On-premises se refiere a una forma tradicional de cómputo en la cual nos encargamos de gestionar nuestra propia infraestructura.
+
+### Responsabilidades según el tipo de cómputo
+
+En la siguiente tabla se muestra qué componentes de IT están administrados según el tipo de cómputo en la nube. “Sí” indica que el componente está administrado por el proveedor de nube, “No” indica que nosotros somos responsables del componente.
+
+| Componente | On-premises | IAAS | PAAS | SAAS |
+|---|---|---|---|---|
+| Aplicaciones | No | No | No | Sí |
+| Data | No | No | No | Sí |
+| Runtime | No | No | Sí | Sí |
+| Middleware | No | No | Sí | Sí |
+| O/S | No | No | Sí | Sí |
+| Virtualización | No | Sí | Sí | Sí |
+| Servidores | No | Sí | Sí | Sí |
+| Almacenamiento | No | Sí | Sí | Sí |
+| Redes | No | Sí | Sí | Sí | 
+
