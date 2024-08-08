@@ -163,3 +163,56 @@ You might be a devoted AWS user, but did you know these facts? 🤔
 * Active Users: AWS has over 1 Million active users! 🤯
 
 AWS has come a long way, and its story continues to inspire! 🚀
+
+## Una visión global: regiones y zonas de disponibilidad
+
+AWS infrastructure is a global network, built with regions, availability zones, data centers, and points of presence. Let's explore its key components:
+Regions Around the World 🗺️
+AWS boasts a vast global presence, with regions scattered across the globe, like Ohio, Oregon, Northern California, and even government-specific locations like GovCloud East in the US. Want to see the full list? Check out this AWS page! [[Link to AWS page](https://aws.amazon.com/es/about-aws/global-infrastructure/?p=ngi&loc=0)].
+
+##### Choosing the Right Region 🤔
+Selecting the right AWS region for your applications depends on a few key factors:
+* Compliance: Data residency and governance laws are paramount. AWS ensures your data stays within a region unless you explicitly authorize otherwise. 🔒
+* Proximity: Minimize latency and ensure smooth user experiences by launching your application in a region closest to your users. Check out cloudping.info to gauge latency from your location to various regions. ⚡️
+* Service Availability: Some services are global (available everywhere), while others are regional (limited to specific locations).
+
+###### Global Services
+* IAM (Identity and Access Management): Manage user permissions and security.
+* Route 53: A global DNS service.
+* CloudFront: A content delivery network (CDN).
+* WAF (Web Application Firewall): Protect your web applications. 🛡️
+
+###### Regional Services:
+* EC2 (Elastic Compute Cloud): Virtual servers.
+* Beanstalk: A platform-as-a-service (PaaS) for web applications.
+* Lambda: A serverless compute service.
+* Rekognition: An image and video analysis service. 🖼️
+* Pricing: AWS pricing is transparent and varies across regions. You can find detailed pricing on the service pages. 💰
+
+#### Availability Zones: A Closer Look 🏘️
+
+Each availability zone is a cluster of data centers, each packed with servers. These data centers are designed with high availability in mind, featuring redundant power, network infrastructure, and connections. They are physically separated for added resilience. 💪
+
+#### Shared Responsibility: Who Does What? 🤝
+
+AWS and its clients have specific responsibilities within the cloud environment.
+
+##### AWS takes care of:
+* Hardware & Global Infrastructure: The physical hardware and global network infrastructure.
+* Regions: The geographic locations for data centers and services.
+* Availability Zones: The clusters of data centers within regions.
+* AWS Edge Locations/Points of Presence: Points of presence for content delivery and edge computing.
+* Software: Operating systems, virtualization, and other core software components.
+* Compute: Providing virtual servers and compute resources.
+* Storage: Managing storage services like S3.
+* Databases: Providing database services like RDS and DynamoDB.
+* Networking: Managing the global network infrastructure.
+
+##### The client is responsible for:
+* Operating System Updates: Keeping operating systems secure and up-to-date.
+* Data Protection: Securing and managing data stored on AWS. 🔐
+* Application Management: Developing, deploying, and managing applications.
+* Access Control: Configuring and managing access to AWS resources.
+* User and Group Management: Managing users, groups, and permissions within their applications.
+
+This breakdown gives you a better understanding of the components that make up AWS and how it works. Remember, AWS offers a wide range of services and resources to support your cloud computing needs.
