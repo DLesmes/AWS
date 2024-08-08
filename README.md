@@ -2,9 +2,10 @@
 
 🙏 Repo for the knowledge of AWS platzi courses ☁️
 
-## Fundamentals
+## Fundamentals courses
 
-* [Notes](https://github.com/DLesmes/AWS/blob/main/intro/notes_cloud_intro.md), content and code for the course [Introducción a la Nube](https://platzi.com/cursos/intro-nube/)
+* 🤓 [Introducción a la Nube](https://platzi.com/cursos/intro-nube/) [Notes](https://github.com/DLesmes/AWS/blob/main/intro/notes_cloud_intro.md)
+* 🧐 [Cloud computing fundamentals](https://platzi.com/cursos/aws-fundamentos/) [Notes](https://github.com/DLesmes/AWS/blob/main/intro/notes_cloud_intro.md)
 
 ### Other links
 
