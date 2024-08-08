@@ -222,7 +222,7 @@ This breakdown gives you a better understanding of the components that make up A
 
 Moving your applications to the cloud is a big step, and security is paramount. It's crucial to protect your data and ensure users have access only to the resources they need.
 
-##### Data Protection Services
+### Data Protection Services
 AWS offers a variety of services to safeguard your data:
 * Amazon Macie: 🕵️‍♀️ This service helps you discover and protect sensitive data by automatically scanning your data stores and identifying potential risks.
 * AWS Key Management Service (KMS): 🔐 KMS is your key to encryption! It securely stores and manages your encryption keys, making it easier to encrypt and decrypt data.
@@ -230,20 +230,20 @@ AWS offers a variety of services to safeguard your data:
 * AWS Certificate Manager: 🌐 Certificate Manager streamlines the process of obtaining, managing, and deploying SSL/TLS certificates, ensuring secure communication.
 * AWS Secrets Manager: 🤫 Secrets Manager securely stores and retrieves sensitive data like passwords, API keys, and database credentials.
 
-##### Infrastructure Security Services
+### Infrastructure Security Services
 Protecting your infrastructure is just as vital as securing your data. AWS provides these services:
 * AWS Shield: 🛡️ AWS Shield is your shield against DDoS attacks (Denial of Service). It protects your applications from malicious traffic that could overwhelm your systems.
 * AWS Web Application Firewall (WAF): 🚧 WAF acts as a barrier, filtering malicious web traffic to keep your web applications safe.
 * AWS Firewall Manager: 👮‍♂️ Firewall Manager centralizes firewall rule management, making it easier to enforce consistent security policies across your AWS resources.
 
-##### Threat Detection Services
+### Threat Detection Services
 AWS offers a suite of services for proactive threat detection:
 * Amazon GuardDuty: 🚨 GuardDuty automatically detects threats across your AWS environment, constantly monitoring for suspicious activity.
 * Amazon Inspector: 🔎 Inspector helps analyze the security posture of your applications, identifying vulnerabilities and configuration issues.
 * Amazon Config: 📝 Config continuously tracks and evaluates the configuration of your resources, ensuring they comply with your security policies.
 * Amazon CloudTrail: 👣 CloudTrail records user activity and API calls made to your AWS account, providing valuable audit trails for security investigations.
 
-##### Identity and Access Management (IAM) Services
+### Identity and Access Management (IAM) Services
 AWS offers several services for managing user identities and access control:
 * AWS Identity and Access Management (IAM): 🔑 IAM is the cornerstone of access control. It helps you securely manage who has access to your AWS accounts, services, and resources.
 * AWS Single Sign-On (SSO): 🚪 SSO streamlines user logins. It enables users to sign in once and access multiple AWS applications and resources.
