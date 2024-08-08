@@ -125,13 +125,13 @@ En la siguiente tabla se muestra qué componentes de IT están administrados seg
 
 | Componente | On-premises | IAAS | PAAS | SAAS |
 |---|---|---|---|---|
-| Aplicaciones | No | No | No | Sí |
-| Data | No | No | No | Sí |
-| Runtime | No | No | Sí | Sí |
-| Middleware | No | No | Sí | Sí |
-| O/S | No | No | Sí | Sí |
-| Virtualización | No | Sí | Sí | Sí |
-| Servidores | No | Sí | Sí | Sí |
-| Almacenamiento | No | Sí | Sí | Sí |
-| Redes | No | Sí | Sí | Sí | 
+| Aplicaciones | ❌ | ❌ | ❌ | 👍 |
+| Data | ❌ | ❌ | ❌ | 👍 |
+| Runtime | ❌ | ❌ | 👍 | 👍 |
+| Middleware | ❌ | ❌ | 👍 | 👍 |
+| O/S | ❌ | ❌ | 👍 | 👍 |
+| Virtualización | ❌ | 👍 | 👍 | 👍 |
+| Servidores | ❌ | 👍 | 👍 | 👍 |
+| Almacenamiento | ❌ | 👍 | 👍 | 👍 |
+| Redes | ❌ | 👍 | 👍 | 👍 | 
 
