@@ -30,3 +30,10 @@
   * [Servicios de AWS por región](https://aws.amazon.com/es/about-aws/global-infrastructure/regional-product-services/) ☢️
   * [HTTP ping](https://www.cloudping.info/) ⚙️
   * [AWS Ping Test (Latency)](https://cloudpingtest.com/aws)⛓️‍💥
+
+* Pricing 💸💸
+  * [Assign a virtual MFA device in the AWS Management Console](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_enable_virtual.html)
+  * [¿Cómo me aseguro de que no se me generen cargos cuando utilizo el nivel Gratuito de AWS?](https://repost.aws/es/knowledge-center/free-tier-charges)
+  * [Tracking your AWS Free Tier usage](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/tracking-free-tier-usage.html)
+  * [Crear una alarma de facturación para supervisar los cargos estimados de AWS](https://docs.aws.amazon.com/es_es/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html)
+  * [Pricing Calculator](https://calculator.aws/#/addService)
