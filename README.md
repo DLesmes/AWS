@@ -40,3 +40,6 @@
   * [Pricing Calculator](https://calculator.aws/#/addService)
   * [AWS Secrets Manager](https://aws.amazon.com/es/secrets-manager/pricing/)
   * [Create a custom budget](https://scribehow.com/shared/AWS_Lab_2_Create_budget_Custom__Uu46kmkXSzG0kB5Rmfi1aA)
+
+* Certificates 📜
+  * [AWS Certified Cloud Practitioner](https://aws.amazon.com/es/certification/certified-cloud-practitioner/)
