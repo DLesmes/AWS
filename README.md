@@ -39,3 +39,4 @@
   * [Crear una alarma de facturación para supervisar los cargos estimados de AWS](https://docs.aws.amazon.com/es_es/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html)
   * [Pricing Calculator](https://calculator.aws/#/addService)
   * [AWS Secrets Manager](https://aws.amazon.com/es/secrets-manager/pricing/)
+  * [Create a custom budget](https://scribehow.com/shared/AWS_Lab_2_Create_budget_Custom__Uu46kmkXSzG0kB5Rmfi1aA)
