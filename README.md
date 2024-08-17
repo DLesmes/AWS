@@ -30,6 +30,7 @@
   * [Servicios de AWS por región](https://aws.amazon.com/es/about-aws/global-infrastructure/regional-product-services/) ☢️
   * [HTTP ping](https://www.cloudping.info/) ⚙️
   * [AWS Ping Test (Latency)](https://cloudpingtest.com/aws)⛓️‍💥
+  * [Directory Services](https://aws.amazon.com/es/directoryservice/) 🙊
 
 * Pricing 💸💸
   * [Assign a virtual MFA device in the AWS Management Console](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_enable_virtual.html)
