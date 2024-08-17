@@ -37,3 +37,4 @@
   * [Tracking your AWS Free Tier usage](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/tracking-free-tier-usage.html)
   * [Crear una alarma de facturación para supervisar los cargos estimados de AWS](https://docs.aws.amazon.com/es_es/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html)
   * [Pricing Calculator](https://calculator.aws/#/addService)
+  * [AWS Secrets Manager](https://aws.amazon.com/es/secrets-manager/pricing/)
