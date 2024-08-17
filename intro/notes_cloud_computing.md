@@ -268,3 +268,25 @@ Secrets Manager also makes it easy to share these secrets with others when neede
 By using Secrets Manager, we eliminate the need to hardcode secrets into our applications. This makes our code cleaner, more secure, and easier to manage. 
 
 Secrets Manager helps us focus on building great applications while ensuring our sensitive data stays protected.  💪 
+
+##  Directory Services:  Managing User Access and Security 🔐
+
+A directory acts like a central hub 🏢, storing login information for everyone on a network and enabling security policy enforcement. 
+
+**Microsoft's Active Directory: The Industry Standard 👑**
+
+Because Windows is the world's most popular operating system, Microsoft created Active Directory to help businesses manage user logins for their employees. 
+
+**AWS Directory Service:  Your Cloud-Based Solution ☁️**
+
+AWS Directory Service is a managed service that brings the power of Active Directory to your AWS resources!  
+
+**Key Benefits of AWS Directory Service:**
+
+* **No Server Hassle:**  AWS Directory Service takes care of managing your Active Directory, so you don't need to set up and maintain servers manually.  🙌
+* **Simplified Directory:**  Choose from a variety of Active Directory options, including a simplified version that's perfect for smaller businesses. 
+* **AWS Integration:** The AWS Directory Connector allows users to access AWS applications using their existing Active Directory credentials.  🔐 
+* **High Availability:**  AWS Directory Service is built for reliability, with automatic error recovery in case of server failures. 
+* **AWS Ecosystem Integration:**  AWS Directory Service seamlessly integrates with other AWS services, making it a valuable addition to your cloud environment.
+
+**Want to learn more?**  Explore the AWS Directory Service documentation!  [[Link to AWS Documentation](https://aws.amazon.com/es/directoryservice/)]  
