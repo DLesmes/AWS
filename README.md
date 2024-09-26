@@ -44,6 +44,7 @@
 
 * Certificates 📜
   * [AWS Certified Cloud Practitioner](https://aws.amazon.com/es/certification/certified-cloud-practitioner/)
+  * [Devops Trainig](https://aws.amazon.com/training/learn-about/devops/)
 
 * Services
   * [EC2](https://aws.amazon.com/es/ec2/)-[pricing](https://aws.amazon.com/ec2/spot/pricing/)
