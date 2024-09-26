@@ -6,6 +6,7 @@
 
 * 🤓 [Introducción a la Nube](https://platzi.com/cursos/intro-nube/) [[Notes](https://github.com/DLesmes/AWS/blob/main/intro/notes_cloud_intro.md)][[slides](https://static.platzi.com/media/public/uploads/curso-de-introduccion-a-aws-computo-almacenamiento-y-bases-de-datos_591b2667-5cc8-478c-aea6-3f08a6d7a74e.pdf)]
 * 🧐 [Cloud computing fundamentals](https://platzi.com/cursos/aws-fundamentos/) [[Notes](https://github.com/DLesmes/AWS/blob/main/intro/notes_cloud_computing.md)][[slides](https://github.com/DLesmes/AWS/blob/main/intro/aws-fundamentals-slides__e4d1a25c-3467-4652-bdad-92e64fb59f98.pdf)]
+* 😎 [Compute, Storage and DataBases](https://platzi.com/cursos/aws-computo/) [[Notes](https://github.com/DLesmes/AWS/blob/main/intro/notes_cloud_computing.md)][[slides](https://github.com/DLesmes/AWS/blob/main/intro/aws-fundamentals-slides__e4d1a25c-3467-4652-bdad-92e64fb59f98.pdf)]
 
 ### Other links 🪚
 
