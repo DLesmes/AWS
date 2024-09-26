@@ -21,3 +21,25 @@ Edge computing brings computation and data processing closer to where it's neede
 * AWS Wavelength: Access AWS services from 5G devices without going over the public internet. 📶
 * VMware Cloud on AWS: Migrate your VMware workloads to AWS seamlessly. 🔄
 * AWS Local Zones: Run your applications closer to end users for lower latency. 🏎️
+
+## EC2: Your Virtual Machine Powerhouse ⚡️🚀
+**Elastic Compute Cloud** lets you rent virtual machines, known as EC2 instances. You can choose from different types of EC2 instances, each with varying CPU power, RAM, and storage options. There are instances optimized for compute, memory, storage, and other specialized workloads.
+#### Pay-As-You-Go Flexibility 💰
+EC2's most common payment system is hourly or per-second billing, depending on the instance type. For example, an instance costing $0.10 per hour allows you to run one instance for 24 hours or 24 instances for one hour, both costing the same ($2.40).
+#### On-Demand Options and Pricing 💸
+Instances can be easily resized. Start with a low-cost instance and if you need more power, simply stop the instance, choose a new instance type, and restart. Voila! Your instance now has more capacity. 🪄
+Here are some examples of EC2 instance types:
+| Name         | Specifications                | Price           |
+|--------------|-------------------------------|-----------------|
+| t3.nano      | 2 vCPUs, 0.5 GiB RAM       | $0.0052/hour     |
+| t3.xlarge    | 4 vCPUs, 16 GiB RAM        | $0.1664/hour    |
+| c6g.8xlarge  | 32 vCPUs, 64 GiB RAM       | $1.088/hour     |
+| X1e.xlarge   | 128 vCPUs, 3904 GiB RAM, 2x 1920 GB SSD | $26.688/hour   |
+#### Dedicated Hosts: Your Private Cloud Enclave 🔒
+Dedicated Hosts in AWS are like your own private server haven within the AWS cloud. Instead of sharing physical servers with other users, you get exclusive access and control over your EC2 instances' placement and allocation. This is perfect for applications needing:
+* **Enhanced Security:** Keep your data extra safe. 🔐
+* **Regulatory Compliance:**  Meet strict industry standards. ✅
+* **Consistent Performance:**  Experience predictable and reliable performance. 📈
+
+Dedicated Hosts also let you bring your existing software licenses to the cloud without added costs. 💰
+Even AWS beginners can benefit from Dedicated Hosts, enjoying greater resource isolation and predictability while leveraging the scalability and flexibility of AWS. ☁️
