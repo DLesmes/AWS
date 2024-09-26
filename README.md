@@ -46,4 +46,4 @@
   * [AWS Certified Cloud Practitioner](https://aws.amazon.com/es/certification/certified-cloud-practitioner/)
 
 * Services
-  * [EC2](https://aws.amazon.com/es/ec2/)
+  * [EC2](https://aws.amazon.com/es/ec2/)[pricing](https://aws.amazon.com/ec2/spot/pricing/)
