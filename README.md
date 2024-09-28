@@ -51,3 +51,5 @@
   * [AWS Lambda](https://aws.amazon.com/es/lambda/)
     * [Triggers Event](https://docs.aws.amazon.com/es_es/lambda/latest/dg/lambda-services.html#intro-core-components-event-sources) 
   * [storage-classes](https://aws.amazon.com/es/s3/storage-classes/)
+    * [DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AccessingDynamoDB.html)
+      * [Querying tables in DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Query.html)
