@@ -196,7 +196,7 @@ Volume Gateway provides cloud-backed block storage using the iSCSI protocol, mak
 
 Whether you need to seamlessly integrate your file system with S3, modernize your tape backups, or leverage cloud-backed block storage, AWS Storage Gateway has a solution for you. Choose the right gateway for your needs and enjoy a smooth transition to the cloud! 🚀
 
-## [Dive into AWS Databases](https://platzi.com/home/clases/2732-aws-computo/47275-revisando-rds/): A World of Data at Your Fingertips 🌎🗄️
+## [Dive into AWS Databases](https://aws.amazon.com/es/rds/?p=ft&amp;c=db&amp;z=3): A World of Data at Your Fingertips 🌎🗄️
 
 Databases are structured collections of data, electronically stored and accessed using computer systems. AWS offers a wide array of secure and highly available database engines to suit your specific needs. Let's explore some of the key types:
 
