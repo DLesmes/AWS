@@ -145,7 +145,7 @@ Amazon offers various S3 storage classes to meet your specific data access and a
 
 With Amazon S3, you have a range of options to suit your needs.  Need high availability and durability? S3 Standard is your champion. Looking for long-term, cost-effective archival storage? S3 Glacier is your best bet.  Choose the best fit for your specific use case, and enjoy the power and flexibility of S3! 
 
-## Amazon EFS: Your Elastic File System in the Cloud ☁️📁
+## [Amazon EFS](https://aws.amazon.com/es/efs/): Your Elastic File System in the Cloud ☁️📁
 
 Amazon Elastic File System (EFS) is a game-changer for managing shared file storage in the cloud.  It's like having a super-powered network drive for your EC2 instances, but with extra perks! ✨
 
