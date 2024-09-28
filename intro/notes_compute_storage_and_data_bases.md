@@ -200,7 +200,7 @@ Whether you need to seamlessly integrate your file system with S3, modernize you
 
 Databases are structured collections of data, electronically stored and accessed using computer systems. AWS offers a wide array of secure and highly available database engines to suit your specific needs. Let's explore some of the key types:
 
-**Relational Databases:  Structured Data Powerhouses 📊**
+**[Relational Databases](https://platzi.com/home/clases/2732-aws-computo/47275-revisando-rds/):  Structured Data Powerhouses 📊**
 
 Relational databases excel at managing structured data with relationships between tables.  AWS offers these relational database services:
 
