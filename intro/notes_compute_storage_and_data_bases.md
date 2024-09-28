@@ -162,3 +162,36 @@ EFS is built for resilience and high availability:
 * **Automatic Encryption:** Your data is encrypted by default, keeping it safe and secure. 🔐
 
 EFS is a powerful and flexible solution for sharing files across your EC2 instances, offering high availability, durability, and built-in security features. 
+
+## [AWS Storage Gateway](https://aws.amazon.com/es/storagegateway/file/): Your Bridge to the Cloud 🌉☁️
+
+AWS Storage Gateway extends the reach of your on-premises infrastructure, giving you access to virtually unlimited cloud storage.  It's like having a magic portal that connects your local systems to the vastness of AWS. ✨
+
+**Three Gateways, Three Ways to Connect 🚪**
+
+Storage Gateway comprises three distinct gateways, each designed for a specific use case:
+
+**1. File Gateway: Your S3 File System 📁**
+
+File Gateway provides SMB and NFS interfaces to Amazon S3, making it seamlessly integrate with both Windows and Linux environments. It's like having a network drive that's actually backed by S3!
+
+* **Seamless File Access:** Your operating system sees a regular file system, while File Gateway transparently handles the storage of files in S3. 
+* **AWS Integration:** Once your files are in S3, you can leverage other AWS services for processing, analysis, and more. 
+
+**2. Tape Gateway: Farewell to Physical Tapes 👋📼**
+
+Imagine migrating your physical tape backups to a virtual tape library in the cloud. That's precisely what Tape Gateway does!  
+
+* **Virtual Tape Library:**  Tape Gateway integrates with leading backup software, creating a virtual tape library in AWS.
+* **Cost Savings:** Store your virtual tapes in S3 and leverage cost-effective storage classes like S3 Glacier and Glacier Deep Archive for long-term retention. Say goodbye to expensive physical tape management! 
+ 
+**3. Volume Gateway: Block Storage in the Cloud 🧱**
+
+Volume Gateway provides cloud-backed block storage using the iSCSI protocol, making it ideal for applications needing block-level access to data. 
+
+* **Cached Mode:** Primary data resides in S3, while frequently accessed data is cached locally for faster access. 
+* **Stored Mode:** All data is stored locally, with asynchronous backups to S3 for added protection. 
+
+**Conclusion: A Gateway for Every Need ✅**
+
+Whether you need to seamlessly integrate your file system with S3, modernize your tape backups, or leverage cloud-backed block storage, AWS Storage Gateway has a solution for you. Choose the right gateway for your needs and enjoy a smooth transition to the cloud! 🚀
