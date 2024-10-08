@@ -138,3 +138,34 @@ The diagram illustrates a common pattern for setting up a secure VPC:
 By understanding the flow of traffic and the role of each component, you can design and manage a secure and efficient VPC environment for your AWS resources. 
 
 
+## Building Your VPC: A Step-by-Step Guide 🏗️ 
+
+Here's a breakdown of the instructions for creating a VPC and an Internet Gateway in AWS, enhanced with emojis for better clarity:
+
+**Creating Your VPC:  Your Private Cloud Neighborhood**
+
+1. **Find VPC:** In the AWS search bar, type "VPC" and select the first result.  🔍
+2. **Your VPCs:**  Go to "Your VPCs" and click "Create VPC." 
+3. **Configuration:**
+    * **Name Tag (optional):**  DemoVPCLaboratorio 🏷️
+    * **IPv4 CIDR block:** Choose "Manually enter IPv4 CIDR." 
+    * **IPv4 CIDR:**  Enter `10.0.0.0/16`. This defines your VPC's private IP address range.
+4. **Create:** Click "Create VPC." 
+
+**Creating Your Internet Gateway:  Connecting to the World**
+
+1. **Internet Gateways:** Go to "Internet Gateways" and click "Create internet gateway." 🌐
+2. **Name Tag:** Enter "DemoIGWLaboratorio." 🏷️
+3. **Create:**  Click "Create internet gateway."
+4. **Detached State:**  Your new Internet Gateway will appear with a "Detached" status, as it's not yet connected to a VPC. 
+5. **Connect to VPC:** Click "Actions"  ➡️ "Attach to VPC."
+6. **Select VPC:** Choose your VPC ("DemoVPCLaboratorio") and click "Attach internet gateway."  Make sure your Internet Gateway and VPC are in the same AWS region! 
+7. **Success!** You've now created two key components of your VPC. 🎉
+
+**Key Takeaways**
+
+* A VPC provides a private network for your AWS resources. 🔒
+* An Internet Gateway connects your VPC to the internet. 🌐
+* Make sure your Internet Gateway and VPC are in the same region. 🌎
+
+These steps guide you through the initial setup of a VPC and an Internet Gateway.  Remember, this is just the foundation of your VPC environment. You'll need to configure other components, such as subnets and routing tables, to build a complete and functional network. 
