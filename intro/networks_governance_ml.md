@@ -171,3 +171,60 @@ Here's a breakdown of the instructions for creating a VPC and an Internet Gatewa
 * Make sure your Internet Gateway and VPC are in the same region. 🌎
 
 These steps guide you through the initial setup of a VPC and an Internet Gateway.  Remember, this is just the foundation of your VPC environment. You'll need to configure other components, such as subnets and routing tables, to build a complete and functional network. 
+
+
+##  Completing Your VPC Setup: Routing, Subnets, and Security  🏗️
+
+Now that you&#39;ve created your VPC and Internet Gateway, let&#39;s configure the remaining components: routing table, Network Access Control Lists (ACLs), and subnets.
+
+**Creating a Routing Table: Guiding Traffic Flow**
+
+1. **Routing Tables:**  From the VPC service page, go to "Route Tables." 
+2. **Default Route Table:** You&#39;ll see a default route table that was automatically created with your VPC. 
+3. **Edit Routes:** Select the default route table, go to "Routes," and click "Edit routes." 
+4. **Add Route:**  Click "Add route", enter `0.0.0.0/0` in the "Destination" field, select "Internet Gateway" for "Target," and choose the Internet Gateway you created earlier.
+5. **Save Changes:** Click "Save changes." This allows all traffic from your VPC to reach the internet via the Internet Gateway.  🌐
+
+**Creating Network ACLs:  Your VPC Firewall**
+
+1. **Network ACLs:** Go to "Security" in the VPC service page and then to "Network ACLs." 
+2. **Create Network ACLs:** Click "Create network ACL."  You&#39;ll create two Network ACLs, one for each subnet. Name them "NACLA" and "NACLB", and select your VPC. 
+3. **Create:** Click "Create network ACL." 
+
+**Adding Inbound and Outbound Rules: Allowing HTTP Traffic**
+
+For each Network ACL, you need to add inbound and outbound rules to allow HTTP traffic on port 80:
+
+1. **Select Network ACL:** Choose "NACLA" or "NACLB." 
+2. **Inbound Rules:**  Go to "Inbound rules" ➡️ "Edit inbound rules." 
+3. **Add Rule:** Click "Add new rule" and enter these settings:
+    * **Rule number:**  100 (rules are evaluated in ascending order) 
+    * **Type:**  HTTP (80) 
+    * **Source:**  0.0.0.0/0 (allows traffic from anywhere) 
+    * **Allow/Deny:** Allow 
+4. **Save:** Click "Save changes." 
+5. **Repeat:** Repeat the process for outbound rules and for the other Network ACL (NACLB) using the same settings.
+
+**Creating Subnets: Dividing Your VPC**
+
+1. **Subnets:** Go to "Subnets" and click "Create subnet." 
+2. **Choose VPC:** Select your VPC ("DemoVPCLaboratorio") and enter these settings for the first subnet:
+    * **Subnet name:** DemoSubredA 
+    * **Availability Zone:**  Choose the first availability zone that ends in "a".
+    * **IPv4 CIDR block:**  `10.0.0.0/25` (assuming your VPC has a CIDR block of `10.0.0.0/24`)
+3. **Create:** Click "Create subnet."
+4. **Repeat:** Create the second subnet with these settings:
+    * **Subnet name:** DemoSubredB 
+    * **Availability Zone:** Choose the second availability zone that ends in "b".
+    * **IPv4 CIDR block:**  `10.0.0.128/25` 
+
+**Associating Network ACLs with Subnets**
+
+1. **Right-click:** Right-click on "DemoSubredA" and select "Edit network ACL association." 
+2. **Select ACL:**  Choose the corresponding Network ACL (NACLA). 
+3. **Save:**  Click "Save" and repeat the process for "DemoSubredB" and its associated ACL (NACLB). 
+
+**You're Done! 🎉**
+
+You've now created all the essential components of your VPC: Internet Gateway, routing table, Network ACLs, and subnets. You've also granted public access to your subnets via HTTP on port 80. Now you have a secure, customizable, and functional network environment within AWS! 
+
