@@ -150,7 +150,9 @@ Here's a breakdown of the instructions for creating a VPC and an Internet Gatewa
     * **Name Tag (optional):**  DemoVPCLaboratorio 🏷️
     * **IPv4 CIDR block:** Choose "Manually enter IPv4 CIDR." 
     * **IPv4 CIDR:**  Enter `10.0.0.0/16`. This defines your VPC's private IP address range.
-4. **Create:** Click "Create VPC." 
+4. **Create:** Click "Create VPC."
+
+![](https://static.platzi.com/media/articlases/Images/2022-05-30%20%281%29.png)
 
 **Creating Your Internet Gateway:  Connecting to the World**
 
