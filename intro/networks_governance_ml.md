@@ -52,7 +52,7 @@ Amazon VPC lets you create a virtual network within AWS, using your own private 
 
 Here are some key components of Amazon VPC for managing traffic:
 
-* **[NAT Gateway](https://www.youtube.com/watch?v=FTUV0t6JaDA):**  Enables your instances to access the internet without having public IP addresses, enhancing security. 🌐➡️💻
+* **[NAT Gateway](https://www.youtube.com/watch?v=FTUV0t6JaDA):**  [Enables your instances to access the internet without having public IP addresses, enhancing security](https://docs.aws.amazon.com/es_es/vpc/latest/userguide/vpc-nat-gateway.html). 🌐➡️💻
 * **Internet Gateway:**  Allows traffic from the internet to reach your EC2 instances, making your applications publicly accessible.  🌐➡️💻
 * **Network ACLs (Access Control Lists):**  Act as firewalls for your subnets, controlling inbound and outbound traffic based on rules you define.  🚧
 
