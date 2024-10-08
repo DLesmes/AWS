@@ -110,3 +110,8 @@ Route 53 is a powerful yet affordable DNS service that can help you:
 * **Manage traffic flow with flexible routing policies.** 🚦
 
 It&#39;s a complex but highly valuable tool for managing your domain names and ensuring a smooth user experience. 
+
+## VPC Diagram 🎲🪀
+![](https://static.platzi.com/media/user_upload/AWS7-5047ce6b-0603-478d-9aa8-0ea37debb655.jpg)
+
+
