@@ -181,22 +181,28 @@ Now that you&#39;ve created your VPC and Internet Gateway, let&#39;s configure t
 
 1. **Routing Tables:**  From the VPC service page, go to "Route Tables." 
 2. **Default Route Table:** You&#39;ll see a default route table that was automatically created with your VPC. 
-3. **Edit Routes:** Select the default route table, go to "Routes," and click "Edit routes." 
-4. **Add Route:**  Click "Add route", enter `0.0.0.0/0` in the "Destination" field, select "Internet Gateway" for "Target," and choose the Internet Gateway you created earlier.
-5. **Save Changes:** Click "Save changes." This allows all traffic from your VPC to reach the internet via the Internet Gateway.  🌐
+3. **Edit Routes:** Select the default route table, go to "Routes," and click "Edit routes."
 
+![](https://static.platzi.com/media/articlases/Images/2022-05-31.png)
+5. **Add Route:**  Click "Add route", enter `0.0.0.0/0` in the "Destination" field, select "Internet Gateway" for "Target," and choose the Internet Gateway you created earlier.
+6. **Save Changes:** Click "Save changes." This allows all traffic from your VPC to reach the internet via the Internet Gateway.  🌐
+
+![](https://static.platzi.com/media/articlases/Images/2022-05-31%20%281%29.png)
 **Creating Network ACLs:  Your VPC Firewall**
 
 1. **Network ACLs:** Go to "Security" in the VPC service page and then to "Network ACLs." 
 2. **Create Network ACLs:** Click "Create network ACL."  You&#39;ll create two Network ACLs, one for each subnet. Name them "NACLA" and "NACLB", and select your VPC. 
 3. **Create:** Click "Create network ACL." 
 
+![](https://static.platzi.com/media/articlases/Images/2022-05-31%20%282%29.png)
 **Adding Inbound and Outbound Rules: Allowing HTTP Traffic**
 
 For each Network ACL, you need to add inbound and outbound rules to allow HTTP traffic on port 80:
 
 1. **Select Network ACL:** Choose "NACLA" or "NACLB." 
-2. **Inbound Rules:**  Go to "Inbound rules" ➡️ "Edit inbound rules." 
+2. **Inbound Rules:**  Go to "Inbound rules" ➡️ "Edit inbound rules."
+
+![](https://static.platzi.com/media/articlases/Images/2022-05-31%20%283%29.png)
 3. **Add Rule:** Click "Add new rule" and enter these settings:
     * **Rule number:**  100 (rules are evaluated in ascending order) 
     * **Type:**  HTTP (80) 
@@ -205,6 +211,7 @@ For each Network ACL, you need to add inbound and outbound rules to allow HTTP t
 4. **Save:** Click "Save changes." 
 5. **Repeat:** Repeat the process for outbound rules and for the other Network ACL (NACLB) using the same settings.
 
+![](https://static.platzi.com/media/articlases/Images/2022-05-31%20%285%29.png)
 **Creating Subnets: Dividing Your VPC**
 
 1. **Subnets:** Go to "Subnets" and click "Create subnet." 
@@ -217,6 +224,8 @@ For each Network ACL, you need to add inbound and outbound rules to allow HTTP t
     * **Subnet name:** DemoSubredB 
     * **Availability Zone:** Choose the second availability zone that ends in "b".
     * **IPv4 CIDR block:**  `10.0.0.128/25` 
+
+![](https://static.platzi.com/media/articlases/Images/2022-05-31%20%286%29.png)
 
 **Associating Network ACLs with Subnets**
 
