@@ -86,7 +86,7 @@ AWS has strategically placed edge locations around the world. These are points o
 
 CloudFront is a powerful tool for delivering lightning-fast and secure web experiences to users around the globe. It takes care of the complex logistics of content distribution, allowing you to focus on building amazing websites and applications. 
 
-## Amazon Route 53: Your DNS Traffic Controller 🚦🌐
+## [Amazon Route 53](https://aws.amazon.com/es/route53/): Your DNS Traffic Controller 🚦🌐
 
 DNS (Domain Name System) is like the internet's phone book, translating domain names (e.g., google.com) into IP addresses that computers understand. Route 53 is AWS's highly reliable and scalable DNS service, costing just $0.50 per hosted zone per month.  It comes with a variety of routing policies to direct your traffic effectively.
 
