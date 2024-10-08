@@ -113,5 +113,28 @@ It&#39;s a complex but highly valuable tool for managing your domain names and e
 
 ## VPC Diagram 🎲🪀
 ![](https://static.platzi.com/media/user_upload/AWS7-5047ce6b-0603-478d-9aa8-0ea37debb655.jpg)
+1. **User Access:**  A user from the internet attempts to access resources within your VPC. 🌐
+2. **Internet Gateway:** The user's request first encounters the Internet Gateway, which acts as the entry point to your VPC. 🚪
+3. **Router:**  The Internet Gateway directs the traffic to a router within your VPC. 
+4. **Subnets:** The router then forwards the traffic to one of two subnets within your VPC. Subnets are logical subdivisions within your VPC, allowing you to segment your network. 
+5. **Network ACL (Access Control List):**  Each subnet has a Network ACL that acts as a firewall. The Network ACL examines the incoming traffic and checks if it's allowed based on rules you've configured. 🚧
+6. **Access Granted or Denied:** If the Network ACL rules permit the traffic, the user is granted access to the resources within the subnet. If the rules deny access, the user's request is blocked. 🚫
+
+**Key Concepts:**
+
+* **Internet Gateway:** The entry and exit point for traffic between your VPC and the internet.
+* **Router:**  A networking device that directs traffic within your VPC.
+* **Subnets:**  Logical subdivisions of your VPC, allowing you to segment your network resources.
+* **Network ACL:**  A firewall that controls inbound and outbound traffic for a subnet.
+
+**The Big Picture: A Secure VPC Setup 🔒**
+
+The diagram illustrates a common pattern for setting up a secure VPC:
+
+* Subnets are used to separate resources with different security requirements. 
+* Network ACLs act as the first line of defense, controlling traffic at the subnet level.
+* The Internet Gateway provides controlled access between the internet and your VPC.
+
+By understanding the flow of traffic and the role of each component, you can design and manage a secure and efficient VPC environment for your AWS resources. 
 
 
