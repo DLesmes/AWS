@@ -522,3 +522,25 @@ Rekognition provides much more than just celebrity recognition.  It returns a `R
 **Ready for More?**
 
 Go ahead and explore the other Rekognition demos! You'll discover the power of this service for a wide range of applications, from object detection and facial analysis to text extraction and content moderation. 
+
+## Amazon Polly:  Give Your Applications a Voice! 🗣️
+
+Amazon Polly is a powerful service that transforms text into lifelike speech, allowing you to give your applications a natural-sounding voice.  Let&#39;s explore how to use it!
+
+**Exploring Amazon Polly: A World of Voices 🎧**
+
+1. **Polly Console:**  Head over to the Amazon Polly service page and click "Try Polly."
+2. **Voice Options:**  You'll be greeted with a wide range of options for languages, dialects, and voices, depending on the engine you choose. 
+3. **Engine Selection:**  Select either the **Neural** or **Standard** engine. 
+    * **Neural Engine:** Produces the most human-like speech, offering a more natural and expressive experience. 🧠
+    * **Standard Engine:** Provides natural-sounding speech and offers a wider selection of voices. 
+4. **Customization:**  Choose your desired engine, language, and voice. 
+5. **Listen:** Enter your text and click "Listen" to hear Polly in action. 👂
+
+**Polly's Powerful Features**
+
+* **Save to S3:**  Save the generated speech as an audio file in an S3 bucket for easy access and integration with other applications. ☁️
+* **Format Options:** Choose from various audio file formats (MP3, Ogg Vorbis, etc.) to suit your needs. 
+* **Pronunciation Customization:**  Fine-tune pronunciation using SSML (Speech Synthesis Markup Language) tags for even greater control over the speech output. 
+
+Amazon Polly makes it easy to add high-quality, natural-sounding speech to your applications, enhancing user experiences and opening up new possibilities for interactive and engaging content. 
