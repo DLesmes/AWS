@@ -237,3 +237,35 @@ For each Network ACL, you need to add inbound and outbound rules to allow HTTP t
 
 You've now created all the essential components of your VPC: Internet Gateway, routing table, Network ACLs, and subnets. You've also granted public access to your subnets via HTTP on port 80. Now you have a secure, customizable, and functional network environment within AWS! 
 
+## [Management and governance with AWS](https://luxurious-expert-b2e.notion.site/Introducci-n-8a641a06afd942c2843f30ed97212abd): Simplified and Optimized 🧰 ☁️
+
+In the past, companies and organizations had to walk a tightrope between innovation and the control of costs, security, and compliance.  AWS management and governance services are here to simplify that balancing act! ✨ These services aim to make managing your AWS environment as easy and optimized as possible.
+
+### Account Management 🔐
+
+These services help you manage your precious AWS accounts:
+
+* **AWS Control Tower:** Easily set up and govern a secure, multi-account AWS environment. Think of it as your command center for cloud governance. 🏗️
+* **AWS Organizations:**  Centrally manage and govern your AWS environments across multiple accounts.  Keep things organized and under control. 🗂️
+* **AWS Budgets:** Plan and track your AWS costs, ensuring you stay within budget and optimize spending. 💰
+
+### Provisioning Services:  Building Your Cloud Kingdom  🏗️
+
+These services streamline the provisioning, creation, and configuration of new AWS resources:
+
+* **AWS CloudFormation:** Model and provision all your resources using code (Infrastructure as Code). It's like building your cloud environment with blueprints. 📜
+* **AWS OpsWorks:** Automate operations using Chef and Puppet, streamlining configuration management.  Let automation take the wheel! 🤖
+* **AWS Service Catalog:** Create, organize, and govern your own curated catalog of AWS products for your organization. It's like your personal AWS app store. 🛍️
+* **AWS Marketplace:**  Discover, test, and deploy software that runs on AWS. Find the perfect tools for your needs. 🧰
+
+### Operating Your AWS Environment: Smooth Sailing ⛵
+
+These services are your trusted crew for keeping your AWS environment running smoothly:
+
+* **Amazon CloudWatch:**  Monitor your services through metrics and logs, keeping a watchful eye on your cloud infrastructure.  👀
+* **Amazon Config:** Record and evaluate the configurations of your AWS resources, ensuring everything is in order. 
+* **AWS CloudTrail:** Tracks all user activity in your AWS account, providing valuable audit trails for security investigations. 🕵️‍♀️
+* **AWS Systems Manager:** Optimize performance and security while managing a large fleet of systems. Streamline administration tasks.  
+* **Amazon X-Ray:** Analyze and debug applications in production, identifying performance bottlenecks and issues. 🔍
+
+With AWS management and governance services, you can focus on innovation while maintaining control, security, and efficiency across your cloud environment. 
