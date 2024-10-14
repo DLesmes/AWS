@@ -426,6 +426,8 @@ Now that you've created your CloudFormation stack, let's update it by adding ano
 6. **Review Changes:** Click "Next" three times. In "Change set preview", you'll see that it will only add a new S3 bucket because the bucket with logical ID "platzilab" already exists. Click "Update stack."
 7. **New Bucket Created:** You'll see a new bucket in your S3 console that includes "platzilabalexis" in its name.
 
+![](https://static.platzi.com/media/articlases/Images/Screenshot%20at%202022-06-04%2010-36-32.png)
+
 **Creating a Stack with an Explicit Bucket Name**
 
 You can create another stack, giving explicit names to the buckets. Let's use `updatestack2.json`:
