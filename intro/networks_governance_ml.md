@@ -537,6 +537,8 @@ Amazon Polly is a powerful service that transforms text into lifelike speech, al
 4. **Customization:**  Choose your desired engine, language, and voice. 
 5. **Listen:** Enter your text and click "Listen" to hear Polly in action. 👂
 
+![](https://static.platzi.com/media/articlases/Images/2022-06-07.png)
+
 **Polly's Powerful Features**
 
 * **Save to S3:**  Save the generated speech as an audio file in an S3 bucket for easy access and integration with other applications. ☁️
