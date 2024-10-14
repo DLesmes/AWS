@@ -396,3 +396,59 @@ The CloudFormation template we'll use is in JSON format (CloudFormation also sup
 
 This is the first step in using CloudFormation to manage your infrastructure as code. You can expand upon this template to create more complex environments and automate your deployments. 
 
+## Updating Your CloudFormation Stack: Adding More S3 Buckets 🪣➕
+
+Now that you've created your CloudFormation stack, let's update it by adding another S3 bucket.  Then, we'll see how to delete the stack.
+
+**Steps to Update the Stack**
+
+1. **Update Template:** We'll use the `updatestack1.json` file. This file defines the same bucket as before, plus a new bucket with the logical ID "platzilabalexis."
+
+   ```json
+   {
+     "Resources": {
+       "platzilab": {
+         "Type": "AWS::S3::Bucket"
+       },
+       "platzilabalexis": {
+         "Type": "AWS::S3::Bucket"
+       }
+     }
+   }
+   ```
+
+2. **CloudFormation Console:** Go to the CloudFormation page in your AWS account.
+3. **Choose Stack:** Select the stack you created and click "Update." 
+4. **Replace Template:** Under "Prepare template," choose "Replace current template" and upload `updatestack1.json.`
+5. **Review Changes:** Click "Next" three times. In "Change set preview", you'll see that it will only add a new S3 bucket because the bucket with logical ID "platzilab" already exists. Click "Update stack."
+6. **New Bucket Created:** You'll see a new bucket in your S3 console that includes "platzilabalexis" in its name.
+
+**Creating a Stack with an Explicit Bucket Name**
+
+You can create another stack, giving explicit names to the buckets. Let's use `updatestack2.json`:
+
+```json
+{
+  "Resources": {
+    "platzilab": {
+      "Type": "AWS::S3::Bucket",
+      "Properties": {
+        "BucketName": "mibucket123"
+      }
+    },
+    "platzilabalexis": {
+      "Type": "AWS::S3::Bucket"
+    }
+  }
+}
+```
+
+Note that the bucket with logical ID "platzilab" now has the property "BucketName" set to "mibucket123". This name must be unique across all of AWS. If you try to create a stack with a duplicate bucket name, you'll encounter an error, and the stack won't be created.
+
+**Deleting Stacks:  Cleaning Up Your Resources**
+
+1. **Select and Delete:**  To delete a stack, simply select it and click "Delete." 
+2. **Confirmation:**  Confirm the deletion by clicking "Delete stack."
+3. **Repeat:**  Repeat the process for all the stacks you want to remove.  You'll no longer see the CloudFormation-created buckets in your S3 console. 
+
+
