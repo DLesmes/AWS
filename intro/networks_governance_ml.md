@@ -402,6 +402,7 @@ The CloudFormation template we'll use is in JSON format (CloudFormation also sup
      }
    }
    ```
+![](https://static.platzi.com/media/articlases/Images/Screenshot%20at%202022-06-03%2016-10-52.png)
 
 4. **Stack Details:** Click "Next," choose a name for your stack (e.g., "cfnlab"), and click "Next."
 5. **Options:** You can add tags to identify your stack and specify an IAM role (optional). 
