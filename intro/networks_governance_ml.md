@@ -345,3 +345,65 @@ Auto scaling allows you to:
 Auto scaling isn&#39;t limited to EC2. Other AWS services like DynamoDB and Aurora also support auto scaling, giving you the flexibility to manage capacity for various types of workloads.
 
 Auto scaling is a key feature of AWS, enabling you to build highly scalable, resilient, and cost-efficient applications. 
+
+## AWS CloudFormation: Building with Templates 🏗️
+
+CloudFormation allows you to provision infrastructure as code, using templates to define the resources you want to deploy.  Let's create an S3 bucket using a CloudFormation template, update it by adding another bucket, and then finally delete the entire stack. 
+
+**Understanding the Template: Your Infrastructure Blueprint 📝**
+
+The CloudFormation template we'll use is in JSON format (CloudFormation also supports YAML). Here's the basic structure:
+
+```json
+{
+  // Required: Specifies the AWS CloudFormation template version. This should always be the first line.
+  "AWSTemplateFormatVersion": "2010-09-09", 
+
+  // Optional:  Provides a description of the template.
+  "Description": "this template does XXXX", 
+
+  // Optional: Contains metadata about the template. Used for documentation or other purposes. 
+  "Metadata": {},
+
+  // Optional: Defines input parameters that you can pass to the template when creating or updating a stack.
+  "Parameters": {},
+
+  // Optional:  Creates mappings between keys and sets of values, useful for conditional logic or region-specific settings. 
+  "Mappings": {},
+
+  // Optional:  Defines conditions that control whether resources are created or properties are assigned based on logical expressions.
+  "Conditions": {},
+
+  // Optional:  Specifies transformation macros that modify the template before it's processed.
+  "Transform": {},
+
+  // Required:  Declares the resources you want to create in your stack. This is where you define things like S3 buckets, EC2 instances, etc.
+  "Resources": {},
+
+  // Optional:  Defines output values that you can export from your stack. These outputs can be referenced by other stacks.
+  "Outputs": {}
+}
+```
+
+**Creating the Stack: Bringing Your Template to Life**
+
+1. **CloudFormation Console:** Go to the CloudFormation page in your AWS account.
+2. **Create Stack:** Click "Create stack."
+3. **Specify Template:** Choose "Upload a template file," and upload the `createstack.json` file. This file defines a single S3 bucket named "platzilab."
+
+   ```json
+   {
+     "Resources": {
+       "platzilab": {
+         "Type": "AWS::S3::Bucket"
+       }
+     }
+   }
+   ```
+
+4. **Stack Details:** Click "Next," choose a name for your stack (e.g., "cfnlab"), and click "Next."
+5. **Options:** You can add tags to identify your stack and specify an IAM role (optional). 
+6. **Review:**  Leave the default settings and click "Next" to review the configurations. Then click "Create stack." 
+7. **Stack Creation:**  You can monitor the stack creation progress, events, and resources being created. The S3 bucket's name will include the stack name, the bucket name you specified in the template, and a random string to avoid duplicate names. 
+
+This is the first step in using CloudFormation to manage your infrastructure as code. You can expand upon this template to create more complex environments and automate your deployments. 
