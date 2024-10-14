@@ -350,6 +350,8 @@ Auto scaling is a key feature of AWS, enabling you to build highly scalable, res
 
 CloudFormation allows you to provision infrastructure as code, using templates to define the resources you want to deploy.  Let's create an S3 bucket using a CloudFormation template, update it by adding another bucket, and then finally delete the entire stack. 
 
+![](https://static.platzi.com/media/articlases/Images/Screenshot%20at%202022-06-03%2015-03-58.png)
+
 **Understanding the Template: Your Infrastructure Blueprint 📝**
 
 The CloudFormation template we'll use is in JSON format (CloudFormation also supports YAML). Here's the basic structure:
