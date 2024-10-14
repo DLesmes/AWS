@@ -492,3 +492,29 @@ AWS provides a wealth of AI and machine learning services to help you build inte
 * **Amazon Lex:**  Build conversational agents (chatbots) that can understand natural language and engage users in meaningful interactions. 💬
 
 These AWS services provide a comprehensive set of tools for developers and businesses to harness the power of AI and machine learning. 
+
+## Amazon Rekognition:  Your AI-Powered Image & Video Analyst 👁️🤖
+
+Amazon Rekognition is an amazing service that analyzes images and videos using machine learning. Simply feed it an image, and it returns a list of objects it detects in the image, along with a confidence score for each detection. 🤯
+
+**Rekognition in Action: Content Moderation 👮‍♀️**
+
+A common use case for Rekognition is content moderation.  It can help you identify images with adult or violent content, allowing you to keep your platform safe and appropriate. 
+
+**Let's Explore Rekognition!**
+
+1. **Rekognition Console:** Log in to AWS and navigate to the Rekognition page.
+2. **Celebrity Recognition Demo:** Under "Demos," choose "Celebrity recognition." You'll see an image of Jeff Bezos with a confidence score. 
+3. **Try it Yourself!** Upload any celebrity image and see the results. Let's try it with an image of the three Spider-Men (Tom Holland, Andrew Garfield, and Tobey Maguire). Click "Upload" and choose your image. 
+4. **Rekognition's Analysis:** Rekognition will analyze the image and identify the three actors with their respective confidence scores. 🕷️🕷️🕷️
+
+**Beyond Celebrity Recognition:  Unlocking Deeper Insights**
+
+Rekognition provides much more than just celebrity recognition.  It returns a `Response` object containing detailed image characteristics:
+
+* **Object Locations:** Find out the precise position of each detected object.
+* **Sentiment Analysis:** Get an estimate of the emotions expressed in detected faces. 
+
+**Ready for More?**
+
+Go ahead and explore the other Rekognition demos! You'll discover the power of this service for a wide range of applications, from object detection and facial analysis to text extraction and content moderation. 
