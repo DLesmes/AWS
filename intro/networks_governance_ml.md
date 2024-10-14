@@ -368,6 +368,7 @@ The CloudFormation template we'll use is in JSON format (CloudFormation also sup
   "Resources": {}, //  The resources to be provisioned by the template (e.g., S3 buckets, EC2 instances)
   "Outputs": {}  //  Output values that can be returned after the stack is created or updated
 } 
+```
 
 **Creating the Stack: Bringing Your Template to Life**
 
