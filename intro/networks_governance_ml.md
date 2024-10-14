@@ -409,4 +409,6 @@ The CloudFormation template we'll use is in JSON format (CloudFormation also sup
 6. **Review:**  Leave the default settings and click "Next" to review the configurations. Then click "Create stack." 
 7. **Stack Creation:**  You can monitor the stack creation progress, events, and resources being created. The S3 bucket's name will include the stack name, the bucket name you specified in the template, and a random string to avoid duplicate names. 
 
+![](https://static.platzi.com/media/articlases/Images/Screenshot%20at%202022-06-03%2016-23-28.png)
+
 This is the first step in using CloudFormation to manage your infrastructure as code. You can expand upon this template to create more complex environments and automate your deployments. 
