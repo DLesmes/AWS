@@ -569,3 +569,5 @@ Amazon Transcribe is a powerful service that converts speech to text with impres
 * **Customer Service:** Analyze call center recordings to gain insights into customer interactions. 
 
 Amazon Transcribe makes it easy to convert speech to text, unlocking new possibilities for accessibility, efficiency, and innovation. 
+
+![](https://static.platzi.com/media/articlases/Images/2022-06-07%20%281%29.png)
