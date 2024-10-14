@@ -510,6 +510,8 @@ A common use case for Rekognition is content moderation.  It can help you identi
 3. **Try it Yourself!** Upload any celebrity image and see the results. Let's try it with an image of the three Spider-Men (Tom Holland, Andrew Garfield, and Tobey Maguire). Click "Upload" and choose your image. 
 4. **Rekognition's Analysis:** Rekognition will analyze the image and identify the three actors with their respective confidence scores. 🕷️🕷️🕷️
 
+![](https://static.platzi.com/media/articlases/Images/2022-06-06%20%281%29.png)
+
 **Beyond Celebrity Recognition:  Unlocking Deeper Insights**
 
 Rekognition provides much more than just celebrity recognition.  It returns a `Response` object containing detailed image characteristics:
