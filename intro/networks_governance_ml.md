@@ -358,34 +358,16 @@ The CloudFormation template we'll use is in JSON format (CloudFormation also sup
 
 ```json
 {
-  // Required: Specifies the AWS CloudFormation template version. This should always be the first line.
-  "AWSTemplateFormatVersion": "2010-09-09", 
-
-  // Optional:  Provides a description of the template.
-  "Description": "this template does XXXX", 
-
-  // Optional: Contains metadata about the template. Used for documentation or other purposes. 
-  "Metadata": {},
-
-  // Optional: Defines input parameters that you can pass to the template when creating or updating a stack.
-  "Parameters": {},
-
-  // Optional:  Creates mappings between keys and sets of values, useful for conditional logic or region-specific settings. 
-  "Mappings": {},
-
-  // Optional:  Defines conditions that control whether resources are created or properties are assigned based on logical expressions.
-  "Conditions": {},
-
-  // Optional:  Specifies transformation macros that modify the template before it's processed.
-  "Transform": {},
-
-  // Required:  Declares the resources you want to create in your stack. This is where you define things like S3 buckets, EC2 instances, etc.
-  "Resources": {},
-
-  // Optional:  Defines output values that you can export from your stack. These outputs can be referenced by other stacks.
-  "Outputs": {}
-}
-```
+  "AWSTemplateFormatVersion": "2010-09-09",  // Version of the CloudFormation template language 
+  "Description": "this template does XXXX",  //  A description of what the template does
+  "Metadata": {},  // Additional information about the template 
+  "Parameters": {},  //  Input values that can be provided when creating or updating the stack
+  "Mappings": {},  //  Key-value pairs that can be used to map logical names to physical names or other values
+  "Conditions": {},  //  Rules that control whether certain resources are created or properties are assigned based on conditions
+  "Transform": {}, //  Specifies transformations to be applied to the template
+  "Resources": {}, //  The resources to be provisioned by the template (e.g., S3 buckets, EC2 instances)
+  "Outputs": {}  //  Output values that can be returned after the stack is created or updated
+} 
 
 **Creating the Stack: Bringing Your Template to Life**
 
@@ -412,3 +394,4 @@ The CloudFormation template we'll use is in JSON format (CloudFormation also sup
 ![](https://static.platzi.com/media/articlases/Images/Screenshot%20at%202022-06-03%2016-23-28.png)
 
 This is the first step in using CloudFormation to manage your infrastructure as code. You can expand upon this template to create more complex environments and automate your deployments. 
+
