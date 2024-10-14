@@ -497,6 +497,8 @@ These AWS services provide a comprehensive set of tools for developers and busin
 
 Amazon Rekognition is an amazing service that analyzes images and videos using machine learning. Simply feed it an image, and it returns a list of objects it detects in the image, along with a confidence score for each detection. 🤯
 
+![](https://static.platzi.com/media/articlases/Images/2022-06-06.png)
+
 **Rekognition in Action: Content Moderation 👮‍♀️**
 
 A common use case for Rekognition is content moderation.  It can help you identify images with adult or violent content, allowing you to keep your platform safe and appropriate. 
