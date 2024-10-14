@@ -418,10 +418,13 @@ Now that you've created your CloudFormation stack, let's update it by adding ano
    ```
 
 2. **CloudFormation Console:** Go to the CloudFormation page in your AWS account.
-3. **Choose Stack:** Select the stack you created and click "Update." 
-4. **Replace Template:** Under "Prepare template," choose "Replace current template" and upload `updatestack1.json.`
-5. **Review Changes:** Click "Next" three times. In "Change set preview", you'll see that it will only add a new S3 bucket because the bucket with logical ID "platzilab" already exists. Click "Update stack."
-6. **New Bucket Created:** You'll see a new bucket in your S3 console that includes "platzilabalexis" in its name.
+3. **Choose Stack:** Select the stack you created and click "Update."
+
+![](https://static.platzi.com/media/articlases/Images/Screenshot%20at%202022-06-04%2010-29-03.png)
+
+5. **Replace Template:** Under "Prepare template," choose "Replace current template" and upload `updatestack1.json.`
+6. **Review Changes:** Click "Next" three times. In "Change set preview", you'll see that it will only add a new S3 bucket because the bucket with logical ID "platzilab" already exists. Click "Update stack."
+7. **New Bucket Created:** You'll see a new bucket in your S3 console that includes "platzilabalexis" in its name.
 
 **Creating a Stack with an Explicit Bucket Name**
 
