@@ -56,3 +56,4 @@
     * [Información general sobre el almacenamiento en caché](https://aws.amazon.com/es/caching/?nc1=h_ls)
     * [DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AccessingDynamoDB.html)
       * [Querying tables in DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Query.html)
+  * [AWS Deep Learning AMIs](https://docs.aws.amazon.com/dlami/latest/devguide/what-is-dlami.html)
