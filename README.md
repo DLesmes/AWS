@@ -9,6 +9,9 @@
 * 😎 [Compute, Storage and DataBases](https://platzi.com/cursos/aws-computo/) [[Notes](https://github.com/DLesmes/AWS/blob/main/intro/notes_compute_storage_and_data_bases.md)][[slides](https://github.com/DLesmes/AWS/blob/main/intro/aws-fundamentals-slides__e4d1a25c-3467-4652-bdad-92e64fb59f98.pdf)]
 * 😁 [Networks, Governance and Machine Learning](https://platzi.com/cursos/aws-redes/) [[Notes](https://github.com/DLesmes/AWS/blob/main/intro/networks_governance_ml.md)]
 
+## Practical courses
+* 🟢 [Infraestructure as code](https://platzi.com/cursos/iaac-aws/)[[Notes](https://github.com/DLesmes/AWS/blob/main/intro/notes_cloud_computing.md)][[slides](https://static.platzi.com/media/public/uploads/slides-del-curso-de-infraestructura-como-codigo-en-aws_35f66afe-af60-4318-8137-89bcae207d69.pdf)]
+
 ### Other links 🪚
 
 * [Cloud storage](https://aws.amazon.com/es/what-is/cloud-storage/)
