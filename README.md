@@ -10,7 +10,7 @@
 * 😁 [Networks, Governance and Machine Learning](https://platzi.com/cursos/aws-redes/) [[Notes](https://github.com/DLesmes/AWS/blob/main/intro/networks_governance_ml.md)]
 
 ## Practical courses
-* 🟢 [Infraestructure as code](https://platzi.com/cursos/iaac-aws/)[[Notes](https://github.com/DLesmes/AWS/blob/main/intro/notes_cloud_computing.md)][[slides](https://static.platzi.com/media/public/uploads/slides-del-curso-de-infraestructura-como-codigo-en-aws_35f66afe-af60-4318-8137-89bcae207d69.pdf)]
+* 🟢 [Infraestructure as code](https://platzi.com/cursos/iaac-aws/)[[Notes](https://github.com/DLesmes/AWS/blob/main/Practical/IaC.md)][[slides](https://static.platzi.com/media/public/uploads/slides-del-curso-de-infraestructura-como-codigo-en-aws_35f66afe-af60-4318-8137-89bcae207d69.pdf)]
 
 ### Other links 🪚
 
