@@ -284,3 +284,38 @@ Outputs:
       Export:
          Name: LambdaPlatziName
 ```
+
+## Understanding CloudFormation Stacks: Managing Your Cloud Resources as a Team 🏗️
+
+**What is a Stack?**
+
+* **Unified Management:** A stack is a collection of AWS resources that are managed as a single unit. Think of it like a blueprint for a specific part of your cloud infrastructure. 
+
+**Resource Management**
+
+* **All or Nothing:** CloudFormation ensures that all the resources in a stack are either created or deleted together. This helps maintain consistency and prevent partial deployments. 
+
+**What Happens if a Resource Fails to Create?**
+
+* **Rollback:** If any resource in the stack fails to create, CloudFormation automatically rolls back the entire stack, deleting any resources that were successfully created. This ensures that your infrastructure remains in a consistent state. 
+
+**What Happens if I Delete a Stack?**
+
+* **Resource Deletion:** When you delete a stack, all the resources associated with that stack are also deleted.  Be careful! Deleting a stack is a destructive action.
+
+**What is Drift?**
+
+* **Detecting Changes:** Drift occurs when there&#39;s a difference between your CloudFormation template (the desired state of your infrastructure) and the actual state of the resources deployed in AWS. 
+
+**What Can I Identify with Drift?**
+
+* **Resource Mismatch:** Drift detection helps you identify:
+    * Resources that have been added outside of CloudFormation.
+    * Resources that have been deleted.
+    * Resources that have different properties than those defined in your template. 
+
+**Key Benefits of Stacks:**
+
+* **Simplified Management:** Treat your infrastructure as a single unit, making it easier to create, update, and delete. 
+* **Consistency:** Ensure that your infrastructure is deployed according to your template, reducing errors and configuration drift.
+* **Rollback Protection:** Safeguard against failures by automatically rolling back the entire stack if a resource fails to create. 
