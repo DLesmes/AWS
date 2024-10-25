@@ -208,3 +208,79 @@ Outputs:
         Export:
             Name: DynamoTableName
 ```
+
+## [Diving Deeper into CloudFormation Templates](https://docs.aws.amazon.com/es_es/AWSCloudFormation/latest/UserGuide/template-anatomy.html): Conditions, Transforms, Resources, and Outputs 🧰
+
+We've covered the basics of CloudFormation templates. Now, let's explore some more advanced features:
+
+**`Conditions`:** Decision Points in Your Template
+
+* **Conditional Logic:** `Conditions`  introduce logic into your template, allowing you to control whether certain resources are created or properties are assigned, based on specific conditions.
+* **Example:** You might create a condition to check if the environment is "production" and only create certain resources if the condition is true. 
+
+**`Transforms`:** Simplifying Serverless Deployments
+
+* **Serverless Syntax:**  The `Transform`  section allows you to use the simplified syntax of AWS SAM (Serverless Application Model) when deploying serverless applications. 
+* **Example:**  You can define a Lambda function using the `AWS::Serverless::Function`  resource type, which is easier to read than the standard  `AWS::Lambda::Function` type in CloudFormation.
+
+**`Resources`:** The Heart of Your Template ❤️
+
+* **Building Blocks:**  The `Resources` section is the most important part of your template. It's where you declare all the resources you want to create (e.g., S3 buckets, EC2 instances, Lambda functions). 
+* **Required Field:** The `Resources` section is mandatory in every CloudFormation template. 
+
+**`Outputs`:**  Retrieving Values from Your Stack
+
+* **Returning Data:**  `Outputs`  allow you to define values that can be returned from your stack after it's created. 
+* **Accessing Values:** These output values can be used by other stacks or accessed programmatically. 
+* **Example:** You could create an output that returns the ARN (Amazon Resource Name) of a DynamoDB table, which can then be used by a Lambda function. 
+
+By using `Conditions`, `Transforms`, `Resources`, and `Outputs` effectively, you can create sophisticated CloudFormation templates that deploy complex, reusable, and flexible infrastructure in your AWS environment. 
+
+### AWS::Lambda::Function 🌞
+
+```yaml
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Mi primer lambda en platzi
+
+Parameters:
+   NombreLambda:
+      Description: 'Nombre de la funcion Lambda'
+      Type: String
+   
+   RuntimeLambda:
+      Description: Ingresa el runtime de la funcion lambda
+      Type: String
+      Default: python3.10
+      AllowedValues:
+         -python3.7
+         -python2.7
+         -ruby2.5
+         -nodejs8.10
+         -java8
+         -dotnetcore2.1
+
+Resources:
+   LambdaPlatzi:
+      Type: AWS:Serverless:Function
+      Properties: 
+         FunctionName: !Ref NombreLambda
+         Handler: lambda_function.lambda_handler
+         Runtime: !Ref RuntimeLambda
+         MemoriSize: 512
+         TimeOut: 600
+         Role: !GetAtt LambdaRolePlatzi.arn
+
+Outputs: 
+   LambdaARN:
+      Description: "ARN de la funcion Lambda"
+      Value:
+         !GetAtt LambdaPlatzi.arn
+      Export:
+         Name: LambdaPlatziArn
+   LambdaName:
+      Description: "Nombre de la funcion Lambda"
+      Value: 
+         !Ref LambdaPlatzi
+      Export:
+         Name: LambdaPlatziName
+```
