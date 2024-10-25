@@ -60,3 +60,4 @@
     * [DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AccessingDynamoDB.html)
       * [Querying tables in DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Query.html)
   * [AWS Deep Learning AMIs](https://docs.aws.amazon.com/dlami/latest/devguide/what-is-dlami.html)
+  * [Simplify Your Infrastructure Management Using AWS CloudFormation](https://www.youtube.com/watch?v=1h-GPXQrLZw)
