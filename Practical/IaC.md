@@ -198,7 +198,7 @@ Resources:
               KeyType: HASH
           BillingMode: PAY_PER_REQUEST
           SSESpecification: 
-            SSEEEnabled: true
+            SSEEnabled: true
           TableName: !Ref DynamoTableName
 
 Outputs:
