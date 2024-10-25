@@ -141,7 +141,7 @@ CloudFormation templates are the foundation of infrastructure as code on AWS, al
 ```yaml
 AWSTemplateFormatVersion: '2021-09-09'
 
-Description:  This is a sample for the course notes of practical IaC AWS 
+Description: 'This is a sample for the course notes of practical IaC AWS'
 
 Metadata: #NuncaParesDeAprender #esViejoLoSe #loVamosALograr
 
@@ -172,3 +172,38 @@ Parameters:
 ```
 
 CloudFormation empowers you to manage your AWS infrastructure efficiently, reliably, and at scale, making it a must-have tool for modern cloud operations. 
+
+## [AWS::DynamoDB::Table](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html)
+
+```yaml
+AWSTemplateFormatVersion: '2022-02-14'
+
+Description: 'DynamoDB Table creation'
+
+Parameters:
+    DynamoAttribute:
+        Type: String
+    DynamoTableName:
+        Type: String
+    
+Resources:
+    DynamoSinceZero:
+        Type: AWS::DynamoDB::Table
+        Properties: 
+          AttributeDefinitions: 
+            - AttributeName: !Ref DynamoAttribute
+              AttributeType: S
+          KeySchema: 
+            - AttributeName: !Ref DynamoAttribute
+              KeyType: HASH
+          BillingMode: PAY_PER_REQUEST
+          SSESpecification: 
+            SSEEEnabled: true
+          TableName: !Ref DynamoTableName
+
+Outputs:
+    DynamoTableName:
+        Value: !Ref DynamoSinceZero
+        Export:
+            Name: DynamoTableName
+```
