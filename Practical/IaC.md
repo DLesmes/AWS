@@ -189,6 +189,7 @@ Parameters:
 Resources:
     DynamoSinceZero:
         Type: AWS::DynamoDB::Table
+        DeletionPolicy: Delete
         Properties: 
           AttributeDefinitions: 
             - AttributeName: !Ref DynamoAttribute
