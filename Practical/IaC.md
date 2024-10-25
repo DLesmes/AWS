@@ -319,3 +319,5 @@ Outputs:
 * **Simplified Management:** Treat your infrastructure as a single unit, making it easier to create, update, and delete. 
 * **Consistency:** Ensure that your infrastructure is deployed according to your template, reducing errors and configuration drift.
 * **Rollback Protection:** Safeguard against failures by automatically rolling back the entire stack if a resource fails to create. 
+
+### ☀️ [**composition-non-nested-stacks Sample**](https://github.com/czam01/cloudformation/blob/composition-non-nested-stacks/master.yml) ☀️
