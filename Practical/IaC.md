@@ -353,6 +353,5 @@ StackSets streamline multi-account deployments:
 
 StackSets empower you to manage infrastructure at scale, making it easier to maintain consistency, control costs, and enforce security policies across your AWS organization.
 
-
-
+### ☀️[Grant self-managed permissions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-prereqs-self-managed.html)☀️
 
