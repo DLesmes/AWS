@@ -411,4 +411,4 @@ Resources:
 
 In this example, the main stack defines four nested stacks, each responsible for deploying a different part of the infrastructure (API Gateway, Lambda, DynamoDB, and S3 bucket). Each nested stack is defined in a separate template file, referenced by its `TemplateURL`.
 
-## [Lab #3: Creating Stack Resources](https://github.com/czam01/cloudformation/tree/master/nested)
+### ☀️[Lab #3: Creating Stack Resources](https://github.com/czam01/cloudformation/tree/master/nested)☀️
