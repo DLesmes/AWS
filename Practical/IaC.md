@@ -355,3 +355,77 @@ StackSets empower you to manage infrastructure at scale, making it easier to mai
 
 ### ☀️[Grant self-managed permissions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-prereqs-self-managed.html)☀️
 
+## CloudFormation Nested Stacks:  Organizing and Simplifying Complex Deployments 📚
+
+**What are Nested Stacks?**
+
+Nested stacks arise from the limitations of CloudFormation. They allow you to break down large, complex stacks into smaller, more manageable ones. Think of it like organizing your infrastructure into logical modules.  
+
+**Why Use Nested Stacks?**
+
+* **Limits:**  Overcome CloudFormation&#39;s limits on resources, mappings, and template size.
+* **Granularity:** Manage individual resources or groups of related resources in separate stacks.
+* **Order and Dependencies:**  Create dependencies and conditions between stacks, ensuring resources are created in the correct order.
+* **Inter-stack Communication:**  Stacks can communicate with each other through outputs, allowing you to pass information between modules.
+
+**CloudFormation Limits:**
+
+* **Mappings:** 100 per stack
+* **Resources:** 200 per stack
+* **Template Body Size:**
+    * 51,200 bytes for `CreateStack`, `UpdateStack`, or `ValidateTemplate` operations
+    * 460,800 bytes for templates stored in S3
+
+**When to Use Nested Stacks:**
+
+* **Exceeding Limits:** When you need to create more resources or mappings than CloudFormation allows in a single stack.
+* **Improved Granularity:** To manage individual resources or related groups of resources independently.
+* **Managing Dependencies:**  To establish dependencies and conditions between different parts of your infrastructure.
+* **Enabling Reusability:** To create reusable infrastructure modules that can be shared across projects.
+
+**Example: Single Stack with Nested Stacks**
+
+```yaml
+AWSTemplateFormatVersion: 2010-09-09
+Resources:
+  ApiGateway:
+    Type: "AWS::CloudFormation::Stack"
+    Properties:
+      TemplateURL: https://url/api.yml
+
+  Lambda:
+    Type: "AWS::CloudFormation::Stack"
+    Properties:
+      TemplateURL: https://url/lambda.yml
+
+  Dynamo:
+    Type: "AWS::CloudFormation::Stack"
+    Properties:
+      TemplateURL: https://url/dynamo.yml
+
+  Bucket:
+    Type: "AWS::CloudFormation::Stack"
+    Properties:
+      TemplateURL: https://url/bucket.yml
+```
+
+In this example, the main stack defines four nested stacks, each responsible for deploying a different part of the infrastructure (API Gateway, Lambda, DynamoDB, and S3 bucket). Each nested stack is defined in a separate template file, referenced by its `TemplateURL`.
+
+**Example: Multi-Stack Deployment**
+
+```yaml
+Resources:
+  LambdaPlatzi:  # Logical ID of the nested stack
+    Type: AWS::Serverless::Function  # Using SAM syntax
+    Properties:
+      FunctionName: MiPrimeraLambda  # Name of the Lambda function
+      Handler: function.lambda_handler # Entry point to the Lambda function code
+      Runtime: python3.7  # Runtime environment for the function
+      MemorySize: 512   # Amount of memory allocated to the function
+      Timeout: 600     # Timeout setting for the function
+      Role: !GetAtt LambdaRole.Arn  # IAM role to give permissions to the Lambda function
+
+#  (Potentially other resources within the nested stack template, like an API Gateway definition, etc.)
+```
+
+the yml above is a multi-stack deployment where the "LambdaPlatzi" resource is defined as a nested stack, likely containing its own set of resources and configurations within its template. This setup demonstrates how you can break down complex infrastructure deployments into more manageable and organized units using nested stacks. 
