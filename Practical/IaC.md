@@ -410,22 +410,3 @@ Resources:
 ```
 
 In this example, the main stack defines four nested stacks, each responsible for deploying a different part of the infrastructure (API Gateway, Lambda, DynamoDB, and S3 bucket). Each nested stack is defined in a separate template file, referenced by its `TemplateURL`.
-
-**Example: Multi-Stack Deployment**
-
-```yaml
-Resources:
-  LambdaPlatzi:  # Logical ID of the nested stack
-    Type: AWS::Serverless::Function  # Using SAM syntax
-    Properties:
-      FunctionName: MiPrimeraLambda  # Name of the Lambda function
-      Handler: function.lambda_handler # Entry point to the Lambda function code
-      Runtime: python3.7  # Runtime environment for the function
-      MemorySize: 512   # Amount of memory allocated to the function
-      Timeout: 600     # Timeout setting for the function
-      Role: !GetAtt LambdaRole.Arn  # IAM role to give permissions to the Lambda function
-
-#  (Potentially other resources within the nested stack template, like an API Gateway definition, etc.)
-```
-
-the yml above is a multi-stack deployment where the "LambdaPlatzi" resource is defined as a nested stack, likely containing its own set of resources and configurations within its template. This setup demonstrates how you can break down complex infrastructure deployments into more manageable and organized units using nested stacks. 
