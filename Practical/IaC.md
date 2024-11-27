@@ -419,4 +419,84 @@ In this example, the main stack defines four nested stacks, each responsible for
 
 ![](https://private-user-images.githubusercontent.com/61529697/390262884-614c38eb-b966-4758-aa8a-616aecfbaecf.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzI2ODIxMTUsIm5iZiI6MTczMjY4MTgxNSwicGF0aCI6Ii82MTUyOTY5Ny8zOTAyNjI4ODQtNjE0YzM4ZWItYjk2Ni00NzU4LWFhOGEtNjE2YWVjZmJhZWNmLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDExMjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMTI3VDA0MzAxNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTUxMWU5MGVmYjg4M2JmY2M1N2FmMzBjYzNhMTZhOGRiMjI3YTI4ZDM0YzRlOWQ2OGQzY2VmNDkzY2U4MTM2OWMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.mtbOmyz4Why9bmKcMMgNIfKs_HJXJ0fif62BAmBdpAs)
 
+## CloudFormation Intrinsic Functions:  Unlocking the Power of Your Templates ✨
+
+Intrinsic functions are like built-in helpers within your CloudFormation templates (YAML or JSON). They allow you to access information about resources, manipulate strings, and perform other useful operations directly within your template.  Let's explore some of the most commonly used intrinsic functions:
+
+**`!GetAtt` : Retrieving Resource Attributes**
+
+The `!GetAtt` function lets you access attributes of a resource defined in your template.  It's like asking a resource, "Hey, what's your ARN?" or "What's your IP address?"
+
+**Example:**
+
+```yaml
+Resources:
+  ServerlessResourceName:
+    Type: AWS::Serverless::Function
+    Properties:
+      # ... other properties
+      Role: !GetAtt LambdaRoleResourceName.Arn  # Get the ARN of the LambdaRoleResourceName resource
+
+  LambdaRoleResourceName:
+    Type: AWS::IAM::Role
+    # ... properties for the IAM role
+```
+
+**`!FindInMap` : Dynamic Value Mapping**
+
+The `!FindInMap` function retrieves a value from a mapping defined in the `Mappings` section of your template. This is especially useful for region-specific settings.
+
+**Example:**
+
+```yaml
+Mappings:
+  RegionMap:  # Define a mapping for different regions
+    us-east-1:
+      HVM64: "ami-0000"  # AMI ID for us-east-1
+    us-west-1:
+      HVM64: "ami-1111"  # AMI ID for us-west-1
+    eu-west-1:
+      HVM64: "ami-2222"  # AMI ID for eu-west-1
+
+Resources:
+  ResourceName:
+    Type: "AWS::EC2::Instance"
+    Properties:
+      ImageId: !FindInMap  # Dynamically select AMI based on region
+        - RegionMap
+        - !Ref 'AWS::Region'  # Get the current region
+        - HVM64 
+```
+
+**`!Join` : String Concatenation**
+
+The `!Join` function combines multiple strings into a single string. It's like using the "+" operator for strings, but within your CloudFormation template.
+
+**Example:**
+
+```yaml
+!Join [":", ["a", "b", "c"]]  # Results in "a:b:c"
+```
+
+**`!Split` and `!Select` : String Manipulation**
+
+* **`!Split`:** Divides a string into a list of values based on a delimiter.
+* **`!Select`:** Selects a specific value from a list.
+
+These functions are often used together to extract parts of a string.
+
+**Example:**
+
+```yaml
+# Original string: "OPS:XXXXXXXXX"
+# Goal: Extract "XXXXXXXXX"
+
+# Function:
+!Select [1, !Split [":", !Ref Cuenta]] 
+
+# Result: "XXXXXXXXX" 
+```
+
+These intrinsic functions give you powerful tools to work with data and resources within your CloudFormation templates, enabling more dynamic, flexible, and efficient infrastructure deployments.
+
 ### ☀️[Referencia de tipos de recursos y propiedades de AWS](https://docs.aws.amazon.com/es_es/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html)☀️
