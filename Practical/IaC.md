@@ -418,3 +418,5 @@ In this example, the main stack defines four nested stacks, each responsible for
 ### ☀️[Lab #4: Creating Nested Stack Resources](https://github.com/czam01/cloudformation/tree/master/nested)☀️
 
 ![](https://private-user-images.githubusercontent.com/61529697/390262884-614c38eb-b966-4758-aa8a-616aecfbaecf.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzI2ODIxMTUsIm5iZiI6MTczMjY4MTgxNSwicGF0aCI6Ii82MTUyOTY5Ny8zOTAyNjI4ODQtNjE0YzM4ZWItYjk2Ni00NzU4LWFhOGEtNjE2YWVjZmJhZWNmLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDExMjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMTI3VDA0MzAxNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTUxMWU5MGVmYjg4M2JmY2M1N2FmMzBjYzNhMTZhOGRiMjI3YTI4ZDM0YzRlOWQ2OGQzY2VmNDkzY2U4MTM2OWMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.mtbOmyz4Why9bmKcMMgNIfKs_HJXJ0fif62BAmBdpAs)
+
+### ☀️[Referencia de tipos de recursos y propiedades de AWS](https://docs.aws.amazon.com/es_es/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html)☀️
