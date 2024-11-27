@@ -500,3 +500,7 @@ These functions are often used together to extract parts of a string.
 These intrinsic functions give you powerful tools to work with data and resources within your CloudFormation templates, enabling more dynamic, flexible, and efficient infrastructure deployments.
 
 ### ☀️[Referencia de tipos de recursos y propiedades de AWS](https://docs.aws.amazon.com/es_es/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html)☀️
+
+### ☀️[CloudFormation Ref & GetAtt cheatsheet](https://theburningmonk.com/cloudformation-ref-and-getatt-cheatsheet/)☀️
+
+### ☀️[Referencia de función intrínseca](https://docs.aws.amazon.com/es_es/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html)☀️
