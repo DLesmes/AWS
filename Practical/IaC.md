@@ -788,3 +788,5 @@ In this example:
 * When creating the `MyResource`, the `InstanceType` property is set based on the `IsProduction` condition. If the environment is production, a `t3.large` instance is used; otherwise, a `t2.micro` instance is used.
 
 These conditional functions enable you to create flexible and dynamic CloudFormation templates that adapt to different scenarios and configurations, streamlining your infrastructure deployments.
+
+### ☀️[Referencia sintáctica de la sección Conditions para las plantillas de CloudFormation](https://docs.aws.amazon.com/es_es/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html)☀️
