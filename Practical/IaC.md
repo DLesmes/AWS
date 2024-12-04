@@ -654,3 +654,78 @@ In this example:
 3. For the `FunctionName` property, we use `!Ref NombreLambda` to reference the value provided for the `NombreLambda` parameter.  When the stack is created, CloudFormation will substitute this with the actual value you provide for the parameter.
 
 The `!Ref` function is essential for parameterizing your CloudFormation templates, making them more reusable and adaptable to different environments or configurations. 
+
+### **`!ImportValue` Intrinsic Function: Sharing Data Between Stacks**
+
+**When to Use `!ImportValue`:**
+
+* Call an `Export` from another stack.
+* Access an exported property from a different stack.  This enables cross-stack communication and modular infrastructure designs.
+
+**Functionality:**
+
+* `!ImportValue` returns the value of an output exported from another stack. It's a way to share data and configurations between different CloudFormation stacks, enabling you to build more modular and reusable infrastructure components.
+
+**Composition:**
+
+* `!ImportValue` takes a single argument: a reference to the logical name of the exported resource. This logical name should match the name assigned to the output in the exporting stack.
+
+**Syntax (3 Versions):**
+
+* **Version 1 (JSON):**
+
+```json
+{ "Fn::ImportValue" : sharedValueToImport }
+```
+
+* **Version 2 (YAML):**
+
+```yaml
+Fn::ImportValue: sharedValueToImport
+```
+
+* **Version 3 (YAML - short form):**
+
+```yaml
+!ImportValue sharedValueToImport
+```
+
+**Example: Sharing a Database ARN**
+
+Imagine you have two stacks:
+
+* **Stack 1:** Creates a DynamoDB table and exports its ARN (Amazon Resource Name).
+* **Stack 2:** Needs to access the DynamoDB table created by Stack 1.
+
+**Stack 1 (Exporting Stack):**
+
+```yaml
+Resources:
+  MyDynamoDBTable:
+    Type: AWS::DynamoDB::Table
+    # ... table properties ...
+
+Outputs:
+  DynamoDBTableARN:  # Logical name of the output
+    Value: !GetAtt MyDynamoDBTable.Arn  # Get the ARN of the DynamoDB table
+    Export:
+      Name: MySharedDBARN # The name to be used for importing this value in other stacks. Must be unique within a region.
+```
+
+**Stack 2 (Importing Stack):**
+
+```yaml
+Resources:
+  MyLambdaFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      # ... other properties
+      Environment:
+        Variables:
+          TABLE_ARN: !ImportValue MySharedDBARN # Import the ARN from Stack 1
+```
+
+In this example, Stack 2 uses `!ImportValue MySharedDBARN` to retrieve the DynamoDB table ARN exported by Stack 1.  This allows Stack 2 to access the DynamoDB table without needing to recreate it.
+
+
+The `!ImportValue` function facilitates communication between CloudFormation stacks, allowing you to create reusable modules and manage your infrastructure more effectively.
