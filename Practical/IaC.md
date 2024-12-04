@@ -423,7 +423,7 @@ In this example, the main stack defines four nested stacks, each responsible for
 
 Intrinsic functions are like built-in helpers within your CloudFormation templates (YAML or JSON). They allow you to access information about resources, manipulate strings, and perform other useful operations directly within your template.  Let's explore some of the most commonly used intrinsic functions:
 
-**`!GetAtt` : Retrieving Resource Attributes**
+### **`!GetAtt` : Retrieving Resource Attributes**
 
 The `!GetAtt` function lets you access attributes of a resource defined in your template.  It's like asking a resource, "Hey, what's your ARN?" or "What's your IP address?"
 
@@ -442,7 +442,7 @@ Resources:
     # ... properties for the IAM role
 ```
 
-**`!FindInMap` : Dynamic Value Mapping**
+### **`!FindInMap` : Dynamic Value Mapping**
 
 The `!FindInMap` function retrieves a value from a mapping defined in the `Mappings` section of your template. This is especially useful for region-specific settings.
 
@@ -468,7 +468,7 @@ Resources:
         - HVM64 
 ```
 
-**`!Join` : String Concatenation**
+### **`!Join` : String Concatenation**
 
 The `!Join` function combines multiple strings into a single string. It's like using the "+" operator for strings, but within your CloudFormation template.
 
@@ -478,7 +478,7 @@ The `!Join` function combines multiple strings into a single string. It's like u
 !Join [":", ["a", "b", "c"]]  # Results in "a:b:c"
 ```
 
-**`!Split` and `!Select` : String Manipulation**
+### **`!Split` and `!Select` : String Manipulation**
 
 * **`!Split`:** Divides a string into a list of values based on a delimiter.
 * **`!Select`:** Selects a specific value from a list.
