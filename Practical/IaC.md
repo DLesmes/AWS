@@ -581,7 +581,7 @@ In this example:
 
 The `!Sub` function is essential for creating dynamic and reusable CloudFormation templates, enabling you to parameterize your infrastructure and adapt it to different environments easily.
 
-### **`!Ref` Intrinsic Function: Referencing Parameters and Resources**
+### **`!Ref` [Intrinsic Function: Referencing Parameters and Resources](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html)**
 
 **When to Use `!Ref`:**
 
