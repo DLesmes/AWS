@@ -730,7 +730,7 @@ In this example, Stack 2 uses `!ImportValue MySharedDBARN` to retrieve the Dynam
 
 The `!ImportValue` function facilitates communication between CloudFormation stacks, allowing you to create reusable modules and manage your infrastructure more effectively.
 
-## **CloudFormation Conditional Functions**
+## **[CloudFormation Conditional Functions](https://docs.aws.amazon.com/es_es/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-conditions.html)**
 
 These functions enable you to create dynamic templates that adapt to different environments or configurations.
 
