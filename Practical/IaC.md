@@ -580,3 +580,77 @@ In this example:
 
 
 The `!Sub` function is essential for creating dynamic and reusable CloudFormation templates, enabling you to parameterize your infrastructure and adapt it to different environments easily.
+
+### **`!Ref` Intrinsic Function: Referencing Parameters and Resources**
+
+**When to Use `!Ref`:**
+
+There are two primary use cases for the `!Ref` function:
+
+* **Case 1: Referencing Parameters:** When you need to use the value of a parameter defined in the `Parameters` section of your template.
+* **Case 2: Referencing Resource Properties:** When you want to refer to a property of a resource that is *not* accessible using `!GetAtt`.  This is often used for properties like `AvailabilityZone` or other intrinsic properties.
+
+**Functionality:**
+
+The `!Ref` function returns the value of a parameter or a resource.  It's a way to access values that you've defined elsewhere in your template, making your templates more dynamic and reusable.
+
+**Composition:**
+
+The basic structure is:
+
+```
+String VarName: ValueName
+```
+
+However, with `!Ref`, you're usually referencing the logical ID of a resource or the name of a parameter directly, so the structure becomes:
+
+```
+!Ref logicalName  or  !Ref parameterName
+```
+
+**Syntax (3 Versions):**
+
+There are three ways to use the `!Ref` function:
+
+* **Version 1 (JSON):**
+
+```json
+{ "Ref": "logicalName" } 
+```
+
+* **Version 2 (YAML):**
+
+```yaml
+Ref: logicalName
+```
+
+* **Version 3 (YAML - short form):**
+
+```yaml
+!Ref logicalName
+```
+
+**Example: Referencing a Parameter**
+
+```yaml
+AWSTemplateFormatVersion: 2010-09-09
+Parameters:
+  NombreLambda:  # Define a parameter named NombreLambda
+    Description: Nombre de la funcion Lambda  # Description for the parameter
+    Type: String   # Data type of the parameter
+
+Resources:
+  LambdaPlatzi:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: !Ref NombreLambda  # Reference the NombreLambda parameter
+      # ... other properties
+```
+
+In this example:
+
+1. We define a parameter called `NombreLambda` of type `String`.  This parameter will be used to provide the name of the Lambda function.
+2. In the `Resources` section, we define a Lambda function using SAM syntax (`AWS::Serverless::Function`).
+3. For the `FunctionName` property, we use `!Ref NombreLambda` to reference the value provided for the `NombreLambda` parameter.  When the stack is created, CloudFormation will substitute this with the actual value you provide for the parameter.
+
+The `!Ref` function is essential for parameterizing your CloudFormation templates, making them more reusable and adaptable to different environments or configurations. 
