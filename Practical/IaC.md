@@ -729,3 +729,62 @@ In this example, Stack 2 uses `!ImportValue MySharedDBARN` to retrieve the Dynam
 
 
 The `!ImportValue` function facilitates communication between CloudFormation stacks, allowing you to create reusable modules and manage your infrastructure more effectively.
+
+## **CloudFormation Conditional Functions**
+
+These functions enable you to create dynamic templates that adapt to different environments or configurations.
+
+**1. `!And` Function:**
+
+* **Functionality:** Returns `true` if *all* conditions within the function evaluate to `true`. Returns `false` if *any* condition is `false`. It's a logical AND operation.
+* **Composition:**
+  ```yaml
+  !And [condition1, condition2, ... ] 
+  ```
+
+
+**2. `!Or` Function:**
+
+* **Functionality:** Returns `true` if *at least one* condition within the function evaluates to `true`. Returns `false` if *all* conditions are `false`. It's a logical OR operation.
+* **Composition:**
+  ```yaml
+  !Or [condition1, condition2, ...]
+  ```
+
+**3. `!If` Function:**
+
+* **Functionality:** This is the core conditional function. It returns one value if a condition is true, and another value if the condition is false.  It's like an "if-else" statement.
+* **Composition:**
+  ```yaml
+  !If [condition_name, value_if_true, value_if_false]
+  ```
+  Where `condition_name` refers to a condition defined in the `Conditions` section of your template.
+
+
+**4. `!Equals` Function:**
+
+* **Functionality:** Returns `true` if two values are equal, and `false` if they are not.  Often used within `!And`, `!Or`, or `!If` functions to create more complex conditions.
+* **Composition:**
+  ```yaml
+  !Equals [value_1, value_2]
+  ```
+
+**Example: Using !Equals and !If**
+
+```yaml
+Conditions:
+  IsProduction: !Equals [!Ref EnvironmentType, "production"]  # Condition checks if EnvironmentType parameter is "production"
+
+Resources:
+  MyResource:
+    Type: AWS::SomeResourceType
+    Properties:
+      InstanceType: !If [IsProduction, "t3.large", "t2.micro"] # Use a larger instance type for production
+```
+
+In this example:
+
+* A condition named `IsProduction` is defined. It uses `!Equals` to compare the value of the `EnvironmentType` parameter with the string "production."
+* When creating the `MyResource`, the `InstanceType` property is set based on the `IsProduction` condition. If the environment is production, a `t3.large` instance is used; otherwise, a `t2.micro` instance is used.
+
+These conditional functions enable you to create flexible and dynamic CloudFormation templates that adapt to different scenarios and configurations, streamlining your infrastructure deployments.
