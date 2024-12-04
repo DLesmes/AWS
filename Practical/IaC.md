@@ -504,3 +504,79 @@ These intrinsic functions give you powerful tools to work with data and resource
 ### ☀️[CloudFormation Ref & GetAtt cheatsheet](https://theburningmonk.com/cloudformation-ref-and-getatt-cheatsheet/)☀️
 
 ### ☀️[Referencia de función intrínseca](https://docs.aws.amazon.com/es_es/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html)☀️
+
+### **`!Sub` Intrinsic Function: String Substitution in CloudFormation**
+
+**Functionality:**
+
+The `!Sub` function substitutes variables within a string with user-specified input. It&#39;s like a "find and replace" operation for your CloudFormation templates, making them more dynamic and flexible.  It replaces placeholders in a string with values that you provide.
+
+**Composition:**
+
+The basic structure of the `!Sub` function is:
+
+```
+String VarName: ValueName
+```
+
+Where:
+
+* *String* is the string containing variables to be substituted.
+* *VarName* is the name of the variable within the string.
+* *ValueName* is the value to substitute for the variable.
+
+**Syntax (3 Versions):**
+
+There are three ways to use the `!Sub` function:
+
+* **Version 1 (JSON):**
+
+```json
+{ "Fn::Sub": [String, { Var1Name: Var1Value, Var2Name: Var2Value }]}
+```
+
+* **Version 2 (YAML - short form):**
+
+```yaml
+Fn::Sub:
+  - String
+  - { Var1Name: Var1Value, Var2Name: Var2Value }
+```
+
+* **Version 3 (YAML - short form with !Sub):**
+
+```yaml
+!Sub
+  - String
+  - { Var1Name: Var1Value, Var2Name: Var2Value }
+```
+
+**When to Use `!Sub`:**
+
+Use `!Sub` when you need to replace a value in a string, often with a pseudo parameter. Here are some common pseudo parameters used with `!Sub`:
+
+* **`AWS::AccountId`:** Returns the current AWS account ID.
+* **`AWS::NotificationARNs`:** Returns the ARNs of the current stack.
+* **`AWS::NoValue`:** Removes a value from the property.
+* **`AWS::Partition`:** Returns the partition of a resource (e.g., 'aws', 'aws-cn', 'aws-us-gov').
+* **`AWS::Region`:** Returns the current region of the stack.
+* **`AWS::StackName`:** Returns the name of the stack.
+* **`AWS::StackId`:** Returns the ID of the stack.
+* **`AWS::URLSuffix`:** Returns the suffix of a domain (e.g., 'amazonaws.com').
+
+
+**Example using Pseudo Parameters and User-Defined Variables:**
+
+```yaml
+!Sub 'arn:aws:ec2:${AWS::Region}:${AWS::AccountId}:vpc/${vpc}'
+```
+
+In this example:
+
+* `'arn:aws:ec2:${AWS::Region}:${AWS::AccountId}:vpc/${vpc}'` is the string with variable placeholders.
+* `${AWS::Region}` will be replaced with the current AWS region (e.g., 'us-east-1').
+* `${AWS::AccountId}` will be replaced with your AWS account ID.
+* `${vpc}` will be replaced with the value of a parameter or resource attribute named 'vpc' in your template.
+
+
+The `!Sub` function is essential for creating dynamic and reusable CloudFormation templates, enabling you to parameterize your infrastructure and adapt it to different environments easily.
