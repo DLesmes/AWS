@@ -52,6 +52,7 @@
   * [AWS Cloud Quest: Cloud Practitioner](https://explore.skillbuilder.aws/learn/course/external/view/elearning/11458/aws-cloud-quest-cloud-practitioner?acq=sec&sec=syq)
 
 * Services
+  * [GenAI](https://aws.amazon.com/ai/generative-ai/nova/) ✨✨✨
   * [EC2](https://aws.amazon.com/es/ec2/)-[pricing](https://aws.amazon.com/ec2/spot/pricing/)
   * [AWS Lambda](https://aws.amazon.com/es/lambda/)
     * [Triggers Event](https://docs.aws.amazon.com/es_es/lambda/latest/dg/lambda-services.html#intro-core-components-event-sources) 
