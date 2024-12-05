@@ -827,3 +827,4 @@ Automating your infrastructure deployments is essential for achieving speed, rel
 
 By integrating these components, you can build a fully automated CI/CD pipeline for your infrastructure deployments, enabling fast, reliable, and secure releases.  This automation frees up your team to focus on building and innovating, rather than manually managing infrastructure.
 
+### ☀️[CodeStarSourceConnection for Bitbucket Cloud, GitHub, GitHub Enterprise Server, GitLab.com, and GitLab self-managed actions](https://docs.aws.amazon.com/codepipeline/latest/userguide/action-reference-CodestarConnectionSource.html)☀️
