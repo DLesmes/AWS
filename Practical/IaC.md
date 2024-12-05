@@ -828,3 +828,48 @@ Automating your infrastructure deployments is essential for achieving speed, rel
 By integrating these components, you can build a fully automated CI/CD pipeline for your infrastructure deployments, enabling fast, reliable, and secure releases.  This automation frees up your team to focus on building and innovating, rather than manually managing infrastructure.
 
 ### ☀️[CodeStarSourceConnection for Bitbucket Cloud, GitHub, GitHub Enterprise Server, GitLab.com, and GitLab self-managed actions](https://docs.aws.amazon.com/codepipeline/latest/userguide/action-reference-CodestarConnectionSource.html)☀️
+
+## **Step-by-Step Infrastructure Deployment Pipeline**
+
+1. **Repo:** This is your code repository (like GitHub, GitLab, or AWS CodeCommit), where your infrastructure code (e.g., CloudFormation templates) is stored. 🐈‍⬛
+2. **Source:** This stage fetches the code from your repository and triggers the pipeline.  CodePipeline typically uses CodeCommit, S3, or an external Git repository as the source.
+3. **Build:**  This stage often involves tools like CodeBuild to compile code, run tests, and prepare deployment artifacts (e.g., zip files, container images).
+4. **Deploy:** This stage deploys your infrastructure.  CloudFormation uses the code from the "Source" stage (likely a CloudFormation template) to create or update your AWS resources.
+5. **Outputs:** The deployed resources (represented by S3 bucket, DynamoDB, Lambda function) which could include databases, functions, or storage components.
+
+**Related Components:**
+
+* **Artifacts:**  These are the build outputs produced by the "Build" stage, which are then used by the "Deploy" stage.
+* **Monitoring:** This involves monitoring the entire pipeline and deployed resources using services like CloudWatch.
+
+
+**ANSI-Style Representation**
+
+
+```
++-----------------------------------------------------------------+
+|                                                                 |
+|  Infrastructure CI/CD Pipeline                                  |
+|                                                                 |
++-----------------------------------------------------------------+
+|                                                                 |
+|  ┌─────────┐       ┌─────────┐    ┌─────────┐      ┌──────┐     |
+|  │  Repo 🐈‍⬛│──────▶│ Source  │───▶│  Build  │─────▶│Deploy│─▶🪣 |
+|  └─────────┘       └─────────┘    └─────────┘      └──────┘  📦 |
+|                                                              λ  |
+|       └────────────────────┬───────────────────────────┘        |
+|                            │                                    |
+|              ┌─────────┐   │   ┌──────────┐                     |
+|              │Artifacts│───────│Monitoring│                     |
+|              └─────────┘       └──────────┘                     |
+|                                                                 |
++-----------------------------------------------------------------+
+
+  Legend: 🐈‍⬛ = Code Repository,  🪣 = S3, 📦 = DynamoDB, λ = Lambda
+
+  Tools: CodePipeline, CodeBuild, CloudFormation, CloudWatch, S3, IAM, etc.
+```
+
+
+
+This visual representation provides a clearer picture of the steps and components involved in an automated infrastructure deployment pipeline.  I hope this helps!
