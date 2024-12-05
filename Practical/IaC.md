@@ -874,4 +874,4 @@ By integrating these components, you can build a fully automated CI/CD pipeline 
 
 This visual representation provides a clearer picture of the steps and components involved in an automated infrastructure deployment pipeline.  I hope this helps!
 
-### ☀️[Lab #6: Repository structure for lambda function deployment](https://github.com/czam01/lambda-serverless/blob/master/README.md)☀️
+### ☀️[Lab #6: Repository structure for lambda function deployment](https://github.com/czam01/cloudformation/tree/master/codepipeline)☀️
