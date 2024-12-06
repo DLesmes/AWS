@@ -880,3 +880,37 @@ This visual representation provides a clearer picture of the steps and component
    * Prerequisite deployment
    * [Creating the pipeline for deploying a lambda function](https://github.com/czam01/lambda-serverless/blob/master/config/buildspec.yml)
    * Verification of resources created in the pipeline
+
+## **Security in CloudFormation Templates**
+
+**Services for Enhanced Security:**
+
+* **Secrets Manager:**  Use Secrets Manager to rotate, manage, and retrieve database credentials, API keys, and other secrets securely.  This prevents hardcoding sensitive information in your templates.
+* **Parameter Store:**  Provides secure, hierarchical storage for configuration data and secrets. You can store parameters and retrieve them during stack creation or updates, keeping sensitive information out of your templates.
+
+**Security in Deployments:**
+
+* **Protecting Artifacts:** Ensure your build artifacts (e.g., deployment packages) are stored securely in S3 and protected with appropriate access controls. Avoid storing sensitive information directly within artifacts.
+* **Using Repository Tokens:**  Use tokens or access keys from your source code repositories (e.g., GitHub, GitLab) to integrate with your deployment pipeline securely. This avoids hardcoding credentials in your pipeline configuration.
+
+**Example: Using Secrets Manager for a GitHub Token**
+
+```yaml
+Configuration:
+  Owner: czam01
+  PollForSourceChanges: false
+  OAuthToken: "{{resolve:secretsmanager:CiToken:SecretString:GitHubToken}}" # Retrieve GitHub token from Secrets Manager
+  Repo: !Sub ${AWS::StackName} # Using !Sub for dynamic stack name
+  Branch: !Ref BranchRepo
+```
+
+In this example:
+
+*  The `OAuthToken` property retrieves the GitHub token from AWS Secrets Manager using the `resolve:secretsmanager` helper function.
+* The `CiToken` part likely refers to the name of the secret in Secrets Manager.
+*  `SecretString:GitHubToken` specifies that the secret is a string and that the `GitHubToken` field within the secret should be retrieved.
+*  This approach avoids embedding the GitHub token directly in the CloudFormation template, improving security.
+
+By following these security practices, you can protect your sensitive information, ensure the integrity of your deployments, and build a more secure cloud infrastructure.
+
+
