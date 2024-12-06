@@ -951,3 +951,67 @@ Understanding CloudFormation stack statuses is crucial for troubleshooting deplo
 
 By understanding these statuses, you can more effectively troubleshoot and manage your CloudFormation deployments. They give you insight into the progress and outcome of stack operations, allowing you to identify and resolve issues quickly.
 
+## Secure Your CloudFormation Deployments: Secrets Management and Encryption 🛡️
+
+Building infrastructure as code with CloudFormation is a best practice, but securing your deployments is crucial. Let's explore essential security measures using AWS Secrets Manager and KMS.
+
+**1. [AWS Secrets Manager](https://docs.aws.amazon.com/es_es/secretsmanager/latest/userguide/intro.html): Protecting Your Sensitive Data 🤫**
+
+Secrets Manager helps you securely manage secrets (passwords, API keys, database credentials) and their lifecycle within AWS. It offers features like rotation, access control, and encryption.
+
+**Secrets Manager supports several secret types, including direct integration with AWS services:**
+
+1. **RDS:** Relational Database Service (see our AWS Databases course for more).
+2. **Redshift Cluster:** Data lake service (see our AWS Big Data course for more).
+3. **DocumentDB:** Document database (similar to MongoDB).
+4. **Other databases.**
+5. **Other types of secrets:** This flexible option lets you store any type of secret.
+
+**Example: Securely Storing a GitHub Token**
+
+To encrypt sensitive information like GitHub tokens in your CloudFormation templates, use the "Other type of secrets" option. Select a KMS key to encrypt the secret.
+
+Imagine you're creating a [CodePipeline using CloudFormation](https://docs.aws.amazon.com/es_es/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html).  One stage needs to read code from GitHub, requiring a connection token.  Here&#39;s how to securely store it:
+
+1. **Create a secret** in Secrets Manager. Choose "Other type of secrets."
+2. **Store your GitHub token** as the secret value. Use a descriptive name for the secret, like `TokenGithub`.  The secret itself might be named `SecretGithub`.
+3. **In your CloudFormation template,** reference the secret like this:
+
+```yaml
+OAuthToken: "{{resolve:secretsmanager:SecretGithub:SecretString:TokenGithub}}"
+```
+
+This uses `resolve:secretsmanager` to retrieve the secret dynamically during deployment.  
+
+* `SecretGithub` is the name of the secret in Secrets Manager.
+* `TokenGithub` is the key of the secret value within Secrets Manager.
+
+By using Secrets Manager, you can avoid exposing sensitive information in your CloudFormation templates and repositories.  **Important:**  Ensure your CodePipeline role has `GetSecretValue` permission for the secret in Secrets Manager.
+
+**Secrets Manager Pricing:**
+
+* **Per secret:** $0.40/month
+* **API calls:** $0.05 per 10,000 calls
+
+**2. [AWS KMS](https://docs.aws.amazon.com/es_es/kms/latest/developerguide/overview.html) (Key Management Service): Controlling Encryption Keys 🔑**
+
+KMS manages encryption keys, adding a strong layer of security. When creating a KMS key, specify:
+
+1. **Key users:** Who can use the key.
+2. **Key administrators:** Who can manage the key.
+
+KMS integrates with AWS CloudTrail for auditing, logging who used or attempted to use a key.  Secrets Manager uses KMS for encryption; you can choose the default KMS key or create your own.
+
+**Example: Encrypting a Connection String**
+
+To encrypt a connection string, you can use:
+
+* **[AWS CLI](https://docs.aws.amazon.com/cli/latest/reference/kms/encrypt.html):** `aws kms encrypt` command.
+* **[AWS SDK for Python (Boto3)](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.encrypt):** The `encrypt` method of the KMS client.
+
+Other AWS-supported programming languages can also be used.  Ensure that the service accessing the encrypted data has decryption permissions.
+
+
+By using Secrets Manager and KMS, you can effectively secure sensitive data and manage encryption keys, building robust and secure infrastructure deployments. 
+
+
