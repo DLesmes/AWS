@@ -913,4 +913,41 @@ In this example:
 
 By following these security practices, you can protect your sensitive information, ensure the integrity of your deployments, and build a more secure cloud infrastructure.
 
+## CloudFormation Troubleshooting: Decoding Stack Statuses 🔎
+
+Understanding CloudFormation stack statuses is crucial for troubleshooting deployment issues.  Here's a breakdown of the common statuses you might encounter:
+
+**Creation:**
+
+* **`CREATE_COMPLETE`:**  ✅ Stack creation completed successfully.  Your resources are now live!
+* **`CREATE_IN_PROGRESS`:** 🔄 Stack creation is in progress.  Please wait while your resources are being provisioned.
+* **`CREATE_FAILED`:** ❌ Stack creation failed. Check your template for errors, review IAM permissions, and verify parameter values.
+
+**Deletion:**
+
+* **`DELETE_COMPLETE`:** ✅  All resources within the stack have been successfully deleted.  Note that CloudFormation retains stack information for 90 days.
+* **`DELETE_FAILED`:** ❌ Resource deletion failed. This might happen if some resources are still in use or have dependencies on other resources.  Check for dependencies and try again.
+* **`DELETE_IN_PROGRESS`:** 🔄  Resource deletion is in progress.
+
+**Review:**
+
+* **`REVIEW_IN_PROGRESS`:** ⏳ A change set (a set of proposed changes to your stack) is being created but hasn't been executed yet.
+
+**Rollback (After Create Failure):**
+
+* **`ROLLBACK_COMPLETE`:** ✅  Resources have been successfully deleted after a stack creation failure. The rollback was successful.
+* **`ROLLBACK_FAILED`:** ❌ Resource deletion failed during rollback after a stack creation failure. Manual cleanup might be required. 
+* **`ROLLBACK_IN_PROGRESS`:** 🔄  Rollback is in progress, deleting resources after a stack creation failure.
+
+**Update:**
+
+* **`UPDATE_COMPLETE`:** ✅ Stack update completed successfully. Your changes have been applied.
+* **`UPDATE_COMPLETE_CLEANUP_IN_PROGRESS`:** 🧹  CloudFormation is cleaning up old resources after a successful stack update.
+* **`UPDATE_IN_PROGRESS`:** 🔄  Stack update is in progress.
+* **`UPDATE_ROLLBACK_COMPLETE`:** ⏪ Stack has been successfully rolled back to its previous state after a failed update.
+* **`UPDATE_ROLLBACK_COMPLETE_CLEANUP_IN_PROGRESS`:** 🧹 CloudFormation is cleaning up resources after a successful rollback from a failed update.
+* **`UPDATE_ROLLBACK_FAILED`:** ❌ The attempt to roll back the stack to its previous state after a failed update has failed. Manual intervention might be necessary. 
+
+
+By understanding these statuses, you can more effectively troubleshoot and manage your CloudFormation deployments. They give you insight into the progress and outcome of stack operations, allowing you to identify and resolve issues quickly.
 
