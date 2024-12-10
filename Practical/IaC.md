@@ -1014,3 +1014,6 @@ Other AWS-supported programming languages can also be used.  Ensure that the ser
 By using Secrets Manager and KMS, you can effectively secure sensitive data and manage encryption keys, building robust and secure infrastructure deployments. 
 
 ### ☀️[AWS::Lambda::Function](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html)☀️
+### ☀️[AWS::Serverless::Function](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-function.html)☀️
+
+
