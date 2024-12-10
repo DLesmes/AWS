@@ -1011,7 +1011,6 @@ To encrypt a connection string, you can use:
 
 Other AWS-supported programming languages can also be used.  Ensure that the service accessing the encrypted data has decryption permissions.
 
-
 By using Secrets Manager and KMS, you can effectively secure sensitive data and manage encryption keys, building robust and secure infrastructure deployments. 
 
-
+### ☀️[AWS::Lambda::Function](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html)☀️
