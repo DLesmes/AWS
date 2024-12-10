@@ -1,7 +1,7 @@
 # Infraestructure as code notes
 
 ## General Architecture
-![](https://private-user-images.githubusercontent.com/61529697/380011299-62d0d555-3236-4477-bbf8-dee07847c4a1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjk4MzA0ODUsIm5iZiI6MTcyOTgzMDE4NSwicGF0aCI6Ii82MTUyOTY5Ny8zODAwMTEyOTktNjJkMGQ1NTUtMzIzNi00NDc3LWJiZjgtZGVlMDc4NDdjNGExLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMjUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDI1VDA0MjMwNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTY1ZWNhMzY2M2ExZDE1YmQ2ZmEzZTAwM2FkMWRiMGVjZGMyMWZkNmY0OGQwZGE2MjBjNzExY2UwMDIwOWU0ZjkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.6-Kw0oZRBp4kPUnAGHMc-Z4eAYKu6IH4jcfr67iAXdU)
+![](https://github-production-user-asset-6210df.s3.amazonaws.com/61529697/380011299-62d0d555-3236-4477-bbf8-dee07847c4a1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20241210%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241210T034853Z&X-Amz-Expires=300&X-Amz-Signature=775e0e4ab2d171855256475d86c57525a3014c1ca781785bf52b1090d7701733&X-Amz-SignedHeaders=host)
 
 ## Infrastructure as Code:  Building Your Cloud with Confidence 🏗️☁️
 
