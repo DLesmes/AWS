@@ -14,14 +14,14 @@
 
 ### Other links 🪚
 
-* [Cloud storage](https://aws.amazon.com/es/what-is/cloud-storage/)
-* [Data bases](https://aws.amazon.com/es/getting-started/decision-guides/databases-on-aws-how-to-choose/)
 * Cloud definitions 🛡️
   * [¿Qué es la computación en la nube?](https://aws.amazon.com/es/what-is-cloud-computing/)
   * [¿Qué es la nube?](https://azure.microsoft.com/es-es/resources/cloud-computing-dictionary/what-is-the-cloud)
   * [¿Qué es la computación en la nube?](https://cloud.google.com/learn/what-is-cloud-computing?hl=es-419)
 * [Cloud Native Computing Fundation](https://www.cncf.io/)
 * [Serverless Patterns](https://serverlessland.com/patterns/)
+* [AWS CloudFormation Linter](https://github.com/aws-cloudformation/cfn-lint) 🙌
+  
 * Cloud Providers ⚔️
   * [AWS](https://aws.amazon.com/es/)
   * [GCP](https://cloud.google.com/?hl=es-419)
@@ -52,7 +52,9 @@
   * [AWS Cloud Quest: Cloud Practitioner](https://explore.skillbuilder.aws/learn/course/external/view/elearning/11458/aws-cloud-quest-cloud-practitioner?acq=sec&sec=syq)
 
 * Services
-  * [GenAI](https://aws.amazon.com/ai/generative-ai/nova/) ✨✨✨
+  * [GenAI](https://aws.amazon.com/ai/generative-ai/nova/) ✨✨✨ 
+  * [Cloud storage](https://aws.amazon.com/es/what-is/cloud-storage/)
+  * [Data bases](https://aws.amazon.com/es/getting-started/decision-guides/databases-on-aws-how-to-choose/)
   * [EC2](https://aws.amazon.com/es/ec2/)-[pricing](https://aws.amazon.com/ec2/spot/pricing/)
   * [AWS Lambda](https://aws.amazon.com/es/lambda/)
     * [Triggers Event](https://docs.aws.amazon.com/es_es/lambda/latest/dg/lambda-services.html#intro-core-components-event-sources) 
